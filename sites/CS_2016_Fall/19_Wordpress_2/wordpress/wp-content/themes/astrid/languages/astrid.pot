@@ -1,0 +1,876 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Astrid\n"
+"POT-Creation-Date: 2016-02-17 10:00+0200\n"
+"PO-Revision-Date: 2016-02-17 10:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_attr__;esc_html_x\n"
+"X-Poedit-SearchPath-0: D:\\wamp\\www\\wordpress\\wp-content\\themes\\astrid\n"
+
+#. translators: %1$s: smiley
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/comments.php:43
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/comments.php:65
+msgid "Older Comments"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/comments.php:44
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/comments.php:66
+msgid "Newer Comments"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/footer.php:37
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/footer.php:37
+#, php-format
+msgid "Powered by %s"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/footer.php:39
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/functions.php:53
+msgid "Primary"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/functions.php:54
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:641
+msgid "Footer"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/functions.php:109
+msgid "Sidebar"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/functions.php:126
+msgid "Page - "
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/functions.php:128
+msgid "Use this widget area to build content for the page: "
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/functions.php:140
+msgid "Footer "
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:13
+msgid "Site branding"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:33
+msgid "Header area"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:39
+msgid "Header type"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:42
+msgid "Select your header type"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:57
+msgid "Front page header type"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:59
+msgid "Select the header type for your front page"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:61
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:82
+msgid "Image"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:62
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:83
+msgid "Only menu"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:78
+msgid "Site header type"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:80
+msgid "Select the header type for all pages except the front page"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:92
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:108
+msgid "Header text"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:100
+msgid "FAST / EASY / FREE"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:117
+msgid "Time to meet Astrid"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:125
+msgid "Header small text"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:134
+msgid "Explore"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:142
+msgid "Button text"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:159
+msgid "Button URL"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:179
+msgid "Small screens header image"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:183
+msgid "Add a header image for screen widths smaller than 1024px"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:193
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:233
+msgid "Menu style"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:211
+msgid "Sticky menu"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:214
+msgid "Sticky"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:215
+msgid "Static"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:236
+msgid "Inline"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:237
+msgid "Centered"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:256
+msgid "Upload your logo"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:269
+msgid "Fonts"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:271
+msgid ""
+"You can use any Google Fonts you want for the heading and/or body. See the "
+"fonts here: google.com/fonts. See the documentation if you need help with "
+"this: athemes.com/documentation/astrid"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:286
+msgid "Body font name/style/sets"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:304
+msgid "Body font family"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:321
+msgid "Headings font name/style/sets"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:338
+msgid "Headings font family"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:358
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:802
+msgid "Site title"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:379
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:822
+msgid "Site description"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:400
+msgid "H1 font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:421
+msgid "H2 font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:443
+msgid "H3 font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:464
+msgid "H4 font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:485
+msgid "H5 font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:506
+msgid "H6 font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:527
+msgid "Body font size"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:541
+msgid "Blog options"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:557
+msgid "Blog layout"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:561
+msgid "List"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:562
+msgid "Full width (no sidebar)"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:563
+msgid "Masonry (grid style)"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:578
+msgid "Full width single posts?"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:595
+msgid "Excerpt length"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:615
+msgid "Hide post meta?"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:631
+msgid "Hide featured images?"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:656
+msgid "Footer widget area"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:658
+msgid ""
+"Choose the number of widget areas in the footer, then go to Appearance > "
+"Widgets and add your widgets."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:660
+msgid "One"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:661
+msgid "Two"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:662
+msgid "Three"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:679
+msgid "Upload your footer logo"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:693
+msgid "Layout"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:711
+msgid "Activate the footer contact and logo area?"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:727
+msgid "Address"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:744
+msgid "Email address"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:761
+msgid "Phone number"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:782
+msgid "Primary color"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:841
+msgid "Menu background"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:861
+msgid "Body text"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/customizer.php:882
+msgid "Footer background"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/template-tags.php:30
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/template-tags.php:36
+msgid ", "
+msgstr ""
+
+#. translators: %s: Name of current post
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/template-tags.php:62
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/template-parts/content-page.php:39
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:36
+msgid "Styling"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:36
+msgid "Click to expand"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:38
+msgid "Options found in this panel apply only to this widget."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:39
+msgid "Section ID"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:41
+msgid "Background color"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:43
+msgid "Text color"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:45
+msgid "Widget title color"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:47
+msgid "Background image URL"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:50
+msgid "Widget width:"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:54
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:116
+msgid "Full Width"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:55
+msgid "1/2 Width"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:56
+msgid "1/3 Width"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:64
+msgid "Top/bottom padding [px]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widget-options.php:67
+msgid "Remove container?"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:11
+msgid "Show a list of your clients."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:12
+msgid "Astrid FP: Clients"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:25
+msgid ""
+"This widget displays all pages that have the Client Service page template "
+"assigned to them."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:26
+msgid ""
+"Tip: to rearrange the clients order, edit each client page and add a value "
+"in Page Attributes > Order"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:28
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:28
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:29
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:24
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:28
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:28
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:26
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:28
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/video-widget.php:17
+msgid "Title"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:31
+msgid "Number of clients to show (-1 shows all of them):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:33
+msgid ""
+"Offset (number of clients needs to be different than -1 for this option to "
+"work):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:35
+msgid ""
+"The URL for your button [In case you want a button below your clients block]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:37
+msgid ""
+"The text for the button [Defaults to <em>See all our clients</em> if left "
+"empty]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-clients.php:128
+msgid "See all our clients"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:11
+msgid "Show your employees"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:12
+msgid "Astrid FP: Employees"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:25
+msgid ""
+"This widget displays all pages that have the Single Employee page template "
+"assigned to them."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:26
+msgid ""
+"Tip: to rearrange the employees order, edit each employee page and add a "
+"value in Page Attributes > Order"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:31
+msgid "Number of employees to show (-1 shows all of them):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:33
+msgid ""
+"Offset (number of employees needs to be different than -1 for this option to "
+"work):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:35
+msgid ""
+"The URL for your button [In case you want a button below your employees "
+"block]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:37
+msgid ""
+"The text for the button [Defaults to <em>See all our employees</em> if left "
+"empty]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-employees.php:132
+msgid "See all our employees"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:6
+msgid "Show your visitors some facts about your company."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:7
+msgid "Astrid FP: Facts"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:27
+msgid "You can find a list of the available icons "
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:27
+msgid "here."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:27
+msgid "Usage example: <strong>fa-android</strong>"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:35
+msgid "First fact name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:40
+msgid "First fact value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:45
+msgid "First fact icon"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:51
+msgid "Second fact name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:56
+msgid "Second fact value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:61
+msgid "Second fact icon"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:67
+msgid "Third fact name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:72
+msgid "Third fact value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:77
+msgid "Third fact icon"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:83
+msgid "Fourth fact name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:88
+msgid "Fourth fact value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-facts.php:93
+msgid "Fourth fact icon"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:11
+msgid "Show the latest news from your blog."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:12
+msgid "Astrid FP: Latest News"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:28
+msgid ""
+"Enter the slug for your category or leave empty to show posts from all "
+"categories."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:31
+msgid ""
+"Add the text for the button here if you want to change the default <em>See "
+"all our news</em>"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:75
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-posts.php:77
+msgid "See all our news"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:11
+msgid "Show off your latest projects."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:12
+msgid "Astrid FP: Projects"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:25
+msgid ""
+"This widget displays all pages that have the Single Project page template "
+"assigned to them."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:26
+msgid ""
+"Tip: to rearrange the projects order, edit each project page and add a value "
+"in Page Attributes > Order"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:31
+msgid "Number of projects to show (-1 shows all of them):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:33
+msgid ""
+"Offset (number of projects needs to be different than -1 for this option to "
+"work):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:35
+msgid ""
+"The URL for your button [In case you want a button below your projects block]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:37
+msgid ""
+"The text for the button [Defaults to <em>See all our projects</em> if left "
+"empty]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-projects.php:131
+msgid "See all our projects"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:11
+msgid "Show what services you are able to provide."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:12
+msgid "Astrid FP: Services"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:25
+msgid ""
+"This widget displays all pages that have the Single Service page template "
+"assigned to them."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:26
+msgid ""
+"Tip: to rearrange the services order, edit each service page and add a value "
+"in Page Attributes > Order"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:31
+msgid "Number of services to show (-1 shows all of them):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:33
+msgid ""
+"Offset (number of services needs to be different than -1 for this option to "
+"work):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:35
+msgid ""
+"The URL for your button [In case you want a button below your services block]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:37
+msgid ""
+"The text for the button [Defaults to <em>See all our services</em> if left "
+"empty]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-services.php:132
+msgid "See all our services"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:6
+msgid "Show your visitors some of your skills."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:7
+msgid "Astrid FP: Skills"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:32
+msgid "First skill name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:37
+msgid "First skill value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:43
+msgid "Second skill name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:48
+msgid "Second skill value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:54
+msgid "Third skill name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:59
+msgid "Third skill value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:65
+msgid "Fourth skill name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:70
+msgid "Fourth skill value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:76
+msgid "Fifth skill name"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-skills.php:81
+msgid "Fifth skill value"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:11
+msgid "Display your testimonials."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:12
+msgid "Astrid FP: Testimonials"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:25
+msgid ""
+"This widget displays all pages that have the Single Testimonial page "
+"template assigned to them."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:26
+msgid ""
+"Tip: to rearrange the testimonials order, edit each testimonial page and add "
+"a value in Page Attributes > Order"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:31
+msgid "Number of testimonials to show (-1 shows all of them):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:33
+msgid ""
+"Offset (number of testimonials needs to be different than -1 for this option "
+"to work):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:35
+msgid ""
+"The URL for your button [In case you want a button below your testimonials "
+"block]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:37
+msgid ""
+"The text for the button [Defaults to <em>See all our testimonials</em> if "
+"left empty]"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/front-testimonials.php:137
+msgid "See all our testimonials"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/posts-widget.php:11
+msgid "Recent posts with thumbnails"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/posts-widget.php:12
+msgid "Astrid: Recent Posts"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/posts-widget.php:116
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:57
+msgid "Title:"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/posts-widget.php:119
+msgid "Number of posts to show:"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/posts-widget.php:123
+msgid "Display post date?"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:5
+msgid "Display your social profile"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:6
+msgid "Astrid: Social Profile"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:52
+#, php-format
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:60
+msgid ""
+"In order to display your social icons in a widget, all you need to do is go "
+"to <strong>Appearance > Menus</strong> and create a menu containing links to "
+"your social profiles, then assign that menu here. Supported networks: "
+"Facebook, Twitter, Google Plus, Instagram, Dribble, Vimeo, Linkedin, "
+"Youtube, Flickr, Pinterest, Tumblr, Foursquare, Behance etc."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:62
+msgid "Select your social menu:"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/social-widget.php:64
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/video-widget.php:6
+msgid "Display a video from Youtube, Vimeo etc."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/video-widget.php:7
+msgid "Astrid: Video"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/inc/framework/widgets/video-widget.php:21
+msgid ""
+"Paste the URL of the video (only from a network that supports oEmbed, like "
+"Youtube, Vimeo etc.):"
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/template-parts/content-page.php:28
+#: D:\wamp\www\wordpress\wp-content\themes\astrid/template-parts/content.php:58
+msgid "Pages:"
+msgstr ""

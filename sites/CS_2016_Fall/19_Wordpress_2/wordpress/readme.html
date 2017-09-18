@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; 說明文件</title>
+	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
+</head>
+<body>
+<h1 id="logo">
+	<a href="http://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
+	<br /> Version 4.6
+</h1>
+<p style="text-align: center">個人語意出版平台</p>
+
+<h1>開發者的話</h1>
+<p>歡迎。WordPress 對我而言是一個具有特殊意義的專案。大家都能為 WordPress 做出貢獻，和我們一起創造美好的事物，我很驕傲能作為其中的一份子。開發人員和貢獻者為 WordPress 奉獻了難以估計的時間，我們都致力讓 WordPress 更加優秀。現在，感謝您也參與其中。</p>
+<p style="text-align: right;">&#8212; Matt Mullenweg</p>
+
+<h1>安裝：著名的五分鐘快速安裝法</h1>
+<ol>
+	<li>將 WordPress 壓縮檔解壓縮至一個空的目錄並全部上傳。</li>
+	<li>使用您的瀏覽器開啟 <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span>。這將會指引您設定並產生 <code>wp-config.php</code>檔案，其內含資料庫相關設定。
+		<ol>
+			<li>若基於某些原因無法這麼做，別擔心。這並非每種網頁伺服器都運作正常。使用文字編輯器開啟 <code>wp-config-sample.php</code>檔案，填妥資料庫相關設定。</li>
+			<li>將檔案儲存為 <code>wp-config.php</code> 並上傳它。</li>
+			<li>使用您的瀏覽器開啟 <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span>。</li>
+		</ol>
+	</li>
+	<li>一旦您的設定檔案正確，安裝程式將為您的網誌建立資料表。若出現錯誤請仔細檢查您的 <code>wp-config.php</code> 檔案，並再試一次。若仍失敗，請前往 <a href="http://tw.forums.wordpress.org/" title="WordPress Taiwan 正體中文討論區">WordPress Taiwan 正體中文討論區</a>尋求解決辦法。</li>
+	<li><strong>若您並未輸入密碼，請記下它顯示的密碼。</strong>若您並未提供管理員帳號，它將會是 <code>admin</code>。</li>
+	<li>安裝程式應會將您引導至<a href="wp-login.php">登入頁面</a>。使用您在安裝過程中取得之帳號密碼登入。若密碼為自動產生，您可點擊「個人資料」頁面來變更密碼。</li>
+</ol>
+
+<h1>升級</h1>
+<h2>使用自動升級</h2>
+<p>若您自版本 2.7 或更新版本，您可使用自動升級：</p>
+<ol>
+	<li>使用您的瀏覽器開啟 <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> 並依指示操作。</li>
+	<li>期待更多嘛？並沒有！</li>
+</ol>
+
+<h2>手動升級</h2>
+<ol>
+	<li>您做任何升級前，請確認您已經備份所有任何已修改的檔案，例如 <code>index.php</code>。</li>
+	<li>刪除舊版 WordPress 檔案，記得備份修改過的檔案。</li>
+	<li>上傳新版檔案。</li>
+	<li>使用您的瀏覽器開啟 <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a>。</span></li>
+</ol>
+
+<h2>佈景主題模板變更</h2>
+<p>若您曾自訂您的佈景主題模板，現在可能需要對新版 WordPress 做一些修正。</p>
+
+<h1>整合自其他系統</h1>
+<p>WordPress 可<a href="http://codex.wordpress.org/Importing_Content">自數種系統匯入</a>。首先您需要同上方所述將 WordPress 安裝完成，才能使用<a href="wp-admin/import.php" title="Import to WordPress">匯入工具</a>。</p>
+
+<h1>系統需求</h1>
+<ul>
+	<li><a href="http://php.net/">PHP</a> 版本 <strong>5.2.4</strong> 或更高。</li>
+	<li><a href="http://www.mysql.com/">MySQL</a> 版本 <strong>5.0</strong> 或更高。</li>
+</ul>
+
+<h2>系統建議</h2>
+<ul>
+	<li>使用 Apache <a href="http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> 模組。</li>
+	<li>您可在網誌上放個 <a href="http://wordpress.org/">http://wordpress.org</a> 鍊結。</li>
+</ul>
+
+<h1>線上資源</h1>
+<p>如果您遇到任何文件中未提及的問題，請優先參考我們為您準備的豐富 WordPress 線上資源：</p>
+<dl>
+	<dt><a href="http://codex.wordpress.org/">The WordPress Codex</a></dt>
+		<dd>Codex 是 WordPress 的百科全書。它包含 WordPress 現有版本的大量訊息資源。</dd>
+	<dt><a href="http://wordpress.org/development/">WordPress 開發日誌</a></dt>
+		<dd>這裡您將能找到 WordPress 最新的升級資訊以及相關新聞。最新 WordPress 新聞預設會出現在您的控制台中。</dd>
+	<dt><a href="http://planet.wordpress.org/">WordPress Planet</a></dt>
+		<dd>WordPress Planet 匯集了網路上所有 WordPress 相關內容。</dd>
+	<dt><a href="http://wordpress.org/support/">WordPress 支援論壇</a>、<a href="http://tw.forums.wordpress.org/" title="WordPress Taiwan 正體中文討論區">WordPress Taiwan 正體中文討論區</a></dt>
+		<dd>如果您費盡千辛萬苦仍然無法找到答案，WordPress 支援論壇內活躍與熱心的使用者將能夠幫助您。無論是求助或是助人，您應該確保自己的問題及答案皆能盡量詳盡與準確。</dd>
+	<dt><a href="http://codex.wordpress.org/IRC">WordPress <abbr title="Internet Relay Chat">IRC</abbr> 頻道</a></dt>
+		<dd>WordPress 也有即時的聊天室用於 WordPress 使用者交流以及部分技術支援。前述的維基頁面應能指引您正確的方向。（<a href="irc://irc.freenode.net/wordpress">irc.freenode.net #wordpress</a>）</dd>
+</dl>
+
+<h1>最後</h1>
+<ul>
+	<li>如果您有任何建議、想法、意見，亦或是您發現了一個 Bug (噢！)，請加入<a href="http://wordpress.org/support/">支援論壇</a>與<a href="http://tw.forums.wordpress.org/" title="WordPress Taiwan 正體中文討論區">WordPress Taiwan 正體中文討論區</a>。</li>
+	<li>WordPress 準備了完善的外掛 <abbr title="application programming interface">API</abbr> 方便您進行擴展開發。如果您是開發人員，且有興趣了解並加以利用，請參閱 <a href="http://codex.wordpress.org/Plugin_API" title="WordPress plugin API">Codex 上的外掛文件</a>。盡可能不要更動核心原始碼。</li>
+</ul>
+
+<h1>愛與分享</h1>
+<p>WordPress 沒有數百萬的市場運作基金或名人贊助，但我們有更棒的支持，那就是&#8212;您。如果您喜歡 WordPress，請將它介紹給朋友，或是幫助他人建立一個 WordPress，或者您也可以寫一篇讚揚我們的文章。</p>
+
+<p>WordPress 是 Michel V. 建立的 <a href="http://cafelog.com/">b2/caf&#233;log</a> 官方後續版本，<a href="http://wordpress.org/about/">WordPress 開發團隊</a>將其發展為現今的 WordPress。若您願意支持 WordPress，請考慮<a href="http://wordpress.org/donate/" title="贊助 WordPress">進行贊助</a>。</p>
+
+<h1>版權說明</h1>
+<p>WordPress 基於 <abbr title="GNU Public License">GPL</abbr> v2 通用許可協議發佈。（參見 <a href="license.txt">license.txt</a> ）。</p>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<?php
+$GLOBALS["charset"] = "utf-8";
+$GLOBALS["text_dir"] = "ltr"; // ('ltr' for left to right, 'rtl' for right to left)
+$GLOBALS["date_fmt"] = "Y/m/d H:i";
+$GLOBALS["error_msg"] = array(
+    // error
+    "error"              => "錯誤(S)",
+    "back"               => "回上一頁",
+	"notimplemented"     => "此功能尚未實作",
+
+    // root
+    "home"               => "家目錄不存在, 檢查你的設定。",
+    "abovehome"          => "現用的目錄可能不是上面這家目錄。",
+    "targetabovehome"    => "目標目錄可能不是上面這家目錄。",
+
+    // exist
+    "direxist"           => "目錄不存在。",
+    "filedoesexist"      => "檔案已存在。",
+    "fileexist"          => "檔案不存在。",
+    "itemdoesexist"      => "項目已存在。",
+    "itemexist"          => "項目不存在。",
+    "targetexist"        => "目標目錄不存在。",
+    "targetdoesexist"    => "目標項目已存在。",
+
+    // open
+    "opendir"            => "無法打開目錄。",
+    "readdir"            => "無法讀取目錄。",
+
+    // access
+    "accessdir"          => "你不允許存取這個目錄。",
+    "accessfile"         => "你不允許存取這個檔案。",
+    "accessitem"         => "你不允許存取這個項目。",
+    "accessfunc"         => "你不允許用這個功能。",
+    "accesstarget"       => "你不允許存取這個目標目錄。",
+
+    // actions
+    "permread"           => "獲得權限失敗。",
+    "permchange"         => "權限修改失敗。",
+    "openfile"           => "檔案開啟失敗。",
+    "savefile"           => "檔案儲存失敗。",
+    "createfile"         => "檔案創造失敗。",
+    "createdir"          => "目錄創造失敗。",
+    "uploadfile"         => "檔案上傳失敗。",
+    "copyitem"           => "複製失敗。",
+    "moveitem"           => "移動失敗。",
+    "delitem"            => "刪除失敗。",
+    "chpass"             => "改變密碼失敗。",
+    "deluser"            => "再移動使用者失敗。",
+    "adduser"            => "增加使用者失敗。",
+    "saveuser"           => "儲存使用者失敗。",
+    "searchnothing"      => "你必須指定要搜尋什麼。",
+	"invalidtype"        => "你操作的檔案類型不被允許。",
+
+    // misc
+    "miscnofunc"         => "此功能無法使用。",
+    "miscfilesize"       => "檔案超過最大量尺寸。",
+    "miscfilepart"       => "檔案是只不是公平的上載。",
+    "miscnoname"         => "你必須提供一名稱。",
+    "miscselitems"       => "你沒有選擇任何項目。",
+    "miscdelitems"       => "你確定你要刪除這 \"+num+\" 個檔案嗎?",
+    "miscdeluser"        => "你確定你要刪除這位使用者 '\"+user+\"'嗎?",
+    "miscnopassdiff"     => "新的密碼不不同由現用的。",
+    "miscnopassmatch"    => "密碼不符合。",
+    "miscfieldmissed"    => "你過失一個重要的欄位。",
+    "miscnouserpass"     => "使用者名稱或密碼不正確的。",
+    "miscselfremove"     => "你不能移去你自己。",
+    "miscuserexist"      => "使用者早已存在。",
+    "miscnofinduser"     => "不能尋找使用者。",
+);
+$GLOBALS["messages"] = array(
+    // links
+    "permlink"           => "更改權限",
+    "editlink"           => "編輯",
+    "downlink"           => "下載",
+    "uplink"             => "上一層",
+    "homelink"           => "家目錄",
+    "reloadlink"         => "重新載入",
+    "copylink"           => "複製",
+    "movelink"           => "移動",
+    "dellink"            => "刪除",
+    "comprlink"          => "壓縮檔",
+    "adminlink"          => "管理",
+    "logoutlink"         => "登出",
+    "uploadlink"         => "上傳",
+    "searchlink"         => "搜尋",
+
+    // list
+    "nameheader"         => "名稱",
+    "sizeheader"         => "大小",
+    "typeheader"         => "類型",
+    "modifheader"        => "更改日期",
+    "permheader"         => "權限",
+    "actionheader"       => "動作",
+    "pathheader"         => "路徑",
+
+    // buttons
+    "btncancel"          => "取消",
+    "btnsave"            => "儲存",
+    "btnchange"          => "更改",
+    "btnreset"           => "重置",
+    "btnclose"           => "關閉",
+    "btncreate"          => "製造",
+    "btnsearch"          => "搜尋",
+    "btnupload"          => "上傳",
+    "btncopy"            => "複製",
+    "btnmove"            => "移動",
+    "btnlogin"           => "登入",
+    "btnlogout"          => "登出",
+    "btnadd"             => "增加",
+    "btnedit"            => "編輯",
+    "btnremove"          => "移動",
+
+    // actions
+    "actdir"             => "目錄",
+    "actperms"           => "更改權限",
+    "actedit"            => "編輯檔案",
+    "actsearchresults"   => "搜尋結果",
+    "actcopyitems"       => "複製項目",
+    "actcopyfrom"        => "從 /%s 複製到 /%s ",
+    "actmoveitems"       => "移動項目",
+    "actmovefrom"        => "從 /%s 移動到 /%s ",
+    "actlogin"           => "登入",
+    "actloginheader"     => "登入",
+    "actadmin"           => "管理",
+    "actchpwd"           => "更改密碼",
+    "actusers"           => "使用者",
+    "actarchive"         => "壓縮檔案",
+    "actupload"          => "上傳檔案",
+
+    // misc
+    "miscitems"          => "個項目",
+    "miscfree"           => "剩餘",
+    "miscusername"       => "使用者名稱",
+    "miscpassword"       => "密碼",
+    "miscoldpass"        => "舊密碼",
+    "miscnewpass"        => "新密碼",
+    "miscconfpass"       => "確認密碼",
+    "miscconfnewpass"    => "確認新密碼",
+    "miscchpass"         => "更改密碼",
+    "mischomedir"        => "家目錄",
+    "mischomeurl"        => "家目錄絕對位子 ",
+    "miscshowhidden"     => "顯示隱藏的項目",
+    "mischidepattern"    => "隱藏檔規則",
+    "miscperms"          => "權限",
+    "miscuseritems"      => "(名稱, 家目錄, 顯示隱藏的項目, 權限, 啟用)",
+    "miscadduser"        => "增加使用者",
+    "miscedituser"       => "編輯使用者 '%s'",
+    "miscactive"         => "活動的",
+    "misclang"           => "語言",
+    "miscnoresult"       => "不是結果可用的。",
+    "miscsubdirs"        => "搜尋副目錄",
+    "miscpermnames"      => array("唯獨", "可寫", "可更改密碼", "可寫 &amp; 可更改密碼", "管理員"),
+    "miscyesno"          => array("是", "否", "是", "否"),
+    "miscchmod"          => array("擁有者", "群組", "所有人"),
+);

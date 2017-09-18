@@ -1,0 +1,53 @@
+.at-styling-options {
+  display: none;
+  background-color: #F7F7F7;
+  border: 1px solid #ebebeb;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.wp-customizer .at-styling-options,
+.wp-customizer .at-styling-options {
+  display: block;
+}
+.at-styling-inner {
+	display: none;
+}
+.at-styling-options h4 span {
+	font-size: 12px;
+    color: #AFAFAF;
+    float: right;
+    padding: 0 2px;
+    font-weight: 300;
+    cursor: pointer;
+}
+#available-widgets #available-widgets-list div[class*="atframework_services"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_employees"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_facts"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_skills"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_posts"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_projects"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_clients"] .widget-title::before,
+#available-widgets #available-widgets-list div[class*="atframework_testimonials"] .widget-title::before {
+  color: #fcd088;
+}
+#available-widgets #available-widgets-list div[class*="atframework_services"] .widget-title::before {
+  content: '\f339';
+}
+#available-widgets #available-widgets-list div[class*="atframework_employees"] .widget-title::before {
+  content: '\f336';  
+}
+#available-widgets #available-widgets-list div[class*="atframework_facts"] .widget-title::before {
+  content: '\f313';  
+}
+#available-widgets #available-widgets-list div[class*="atframework_skills"] .widget-title::before {
+  content: '\f184';  
+}
+#available-widgets #available-widgets-list div[class*="atframework_posts"] .widget-title::before {
+  content: '\f109';  
+}
+#available-widgets #available-widgets-list div[class*="atframework_projects"] .widget-title::before {
+  content: '\f322';  
+}
+#available-widgets #available-widgets-list div[class*="atframework_clients"] .widget-title::before {
+  content: '\f307';
+}
