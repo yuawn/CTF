@@ -1,0 +1,103 @@
+2017-04-20  Henning Norén  <henning.noren@gmail.com> - 0.16
+* Remove incorrectly used pure-attribute (thanks to Carl Shapiro for report)
+* Fix a possible overflow by one in the parser
+* Fix pdfcrack starting despite being unable to extract encryption info
+* Fix indention in man-page. Thanks to Jakub Wilk for patch
+* Bump version to 0.16
+2015-09-25  Henning Norén  <henning.noren@gmail.com> - 0.15
+* Fix a few crashes found by "american fuzzy lop"
+* Make the benchmark a bit more robust with volatile
+* Fix a couple of undefined behaviours with left shift on int-type
+* Fix GNU Make-isms in Makefile, thanks to Leonardo Taccari
+* Fix various clang and cppchecker issues and warnings
+* Bump version to 0.15
+2014-08-31  Henning Norén  <henning.noren@gmail.com> - 0.14
+* Add man-page
+* s/CFLAGS=/CFLAGS +=/ in Makefile
+* s/gcc/($CC)/ in Makefile
+* Add support for wordlists and pdfs > 2GB (thanks to Gary Dewey)
+* Bump version to 0.14
+2014-02-10  Henning Norén  <henning.noren@gmail.com> - 0.13
+* Skip strip and add debug symbols in Makefile
+* Bail out if encountering rev 5+ (Not supported)
+* Fix parsing of certain rev 4+ documents
+* Add initial support for rev 5 (SHA256)
+* Fix rev 3 owner password issues when other than 128 bit keylengths
+* Update copyright dates in header of files
+* Fix a gcc warning
+* Fix filemode when opening a file on unix to make it more portable
+  Thanks to Shinobu Maehara for the notice
+* Fix a pdfparser logic bug, thanks to Shinobu Maehara for reporting
+* bump version to 0.13
+2014-02-01  Henning Norén  <henning.noren@gmail.com> - 0.12
+* Print warning for odd key lengths
+* Add support for handling Rev 3 with other than 128 bit keylengths
+* Try parsing Encrypt object even when ID object is not found
+* Fix a few gcc-warnings
+* bump version to 0.12
+2008-08-03  Henning Norén  <henning.noren@gmail.com> - 0.11
+* Print out the user password when finding the ownerpassword
+* Be less strict when parsing magic number
+* Fixed two null-pointer dereferences
+* Actually start the search for trailer in last KB
+* bump version to 0.11
+2008-05-01  Henning Norén  <henning.noren@gmail.com> - 0.10
+* Add support for different newline-styles in wordlists
+* Fix three nasty issues when parsing binary strings
+  A big thanks to Will McCullen who reported and helped debug them
+* Change step 6 when computing the encryption key to only apply to rev 3+
+* Add warnings when the parser got a O/U binary string != 32 bytes
+* Add support for non-hex ID strings
+* Change error messages when not finding the ID or Encrypt object in trailer
+* Try with empty password when bruteforcing from 0 characters (#1767244)
+* Mention pdftk in the README (#1767245)
+* Start search for the trailer in the last KB 
+* bump version to 0.10
+2007-10-23  Henning Norén  <henning.noren@gmail.com> - 0.9
+* flush the buffers in printProgress
+* make use of %zu when printf-ing size_t
+* bump version to 0.9
+2006-10-16  Henning Norén  <henning.noren.402@student.lu.se> - 0.8
+* Removed fweb and Wextra from CFlags in Makefile to support gcc 3.3.5
+* Added snippet about needing GNU Make in README
+* Support version >3 Standard security handlers
+* Actually notice when EncryptMetadata is false and print out it's value
+* Print a warning when someone sets minpw > maxpw
+* Fix some warnings
+* bump version to 0.8
+2006-07-08  Henning Norén  <henning.noren.402@student.lu.se> - 0.7
+* Fix a problem with initializations of passwords when using max-length < 32.
+  Thanks to Antonis Tassis for pointing it out.
+* Fix some inconsistency when using --version-argument
+* bump version to 0.7
+2006-07-06  Henning Norén  <henning.noren.402@student.lu.se> - 0.6
+* Actually save the permutation-setting when saving
+* bump version to 0.6
+2006-07-06  Henning Norén  <henning.noren.402@student.lu.se> - 0.5
+* Make loading and saving states much more robust
+* Block all signals when terminating from a SIGINT
+* Add support for turning on permutations that is now off by default
+* Various small tweaks, cleanups and bugfixes
+* Optimizations of md5 and rc4
+* bump version to 0.5
+2006-06-18  Henning Norén  <henning.noren.402@student.lu.se> - 0.4
+* Switch from using processor-time to using real time when reporting progress
+* Add support for some simple benchmarking
+* Add a check for the correct security-handler version to avoid a segfault
+* Don't try the same password twice when permutating
+* Fix a bug that made pdfcrack unable to load the upw from saved state file
+* Fix a bug that ignored the saved max password when loading a saved state
+* Various small fixes and changes
+* bump version to 0.4
+2006-05-28  Henning Norén  <henning.noren.402@student.lu.se> - 0.3
+* Move CREDITS into README and add reference to project-page at sourceforge
+* Various cleanups and comments
+* Optimize md5 round 1 according to Colin Plumb's implementation
+* bump version to 0.3
+2006-05-26  Henning Norén  <henning.noren.402@student.lu.se> - 0.2
+* Fix stupid bug in main that crept in right before the release
+* Change the updateinterval to 20 seconds and spellfix the define
+* add a newline to the help-text
+* bump version to 0.2
+2006-05-26  Henning Norén  <henning.noren.402@student.lu.se> - 0.1
+* First release

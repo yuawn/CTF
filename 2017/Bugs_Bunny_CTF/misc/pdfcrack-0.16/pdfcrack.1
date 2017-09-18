@@ -1,0 +1,74 @@
+.\"
+.\" Man page for pdfcrack
+.\"
+.\" Copyright (c) 2009, Henning Noren
+.\"
+.\" You may distribute under the terms of the GNU General Public
+.\" License as specified in the README file that comes with the pdfcrack
+.\" distribution.  
+.\"
+.\" Henning Noren
+.\" confusion42@users.sourceforge.net
+.\"
+.TH PDFCRACK "1" "February 2009" "User Commands"
+.SH NAME
+pdfcrack \- Password recovery tool for PDF-files
+.SH SYNOPSIS
+.B pdfcrack 
+[ \fB\-f\fR ]\fR FILE [\fIOPTION\fR]...
+.SH DESCRIPTION
+.B PDFCrack 
+is a tool for recovering passwords and content from PDF-files.
+.PP
+If aborted with Ctrl-C or by receiving a SIGINT signal, \fBpdfcrack\fR will automatically save current position. The position will be saved in a file called \fBsavedstate.sav\fR in current working directory.
+.PP
+Mandatory arguments for long options are mandatory for short options too.
+.SH OPTIONS
+.TP
+\fB\-b\fR, \fB\-\-bench\fR
+perform benchmark and exit
+.TP
+\fB\-c\fR, \fB\-\-charset=\fISTRING\fR
+Use the characters in \fISTRING\fR as charset
+.TP
+\fB\-w\fR, \fB\-\-wordlist=\fIFILE\fR
+Use \fIFILE\fR as source of passwords to try
+.TP
+\fB\-n\fR, \fB\-\-minpw=\fIINTEGER\fR
+Skip trying passwords shorter than \fIINTEGER
+.TP
+\fB\-m\fR, \fB\-\-maxpw=\fIINTEGER\fR
+Stop when reaching this \fIINTEGER\fR passwordlength
+.TP
+\fB\-l\fR, \fB\-\-loadstate=\fIFILE\fR
+Continue from the state saved in \fIFILE
+.TP
+\fB\-o\fR, \fB\-\-owner\fR
+Work with the ownerpassword
+.TP
+\fB\-u\fR, \fB\-\-user\fR
+Work with the userpassword (default)
+.TP
+\fB\-p\fR, \fB\-\-password=\fISTRING\fR
+Give userpassword to speed up breaking ownerpassword (implies \fB-o\fR)
+.TP
+\fB\-q\fR, \fB\-\-quiet\fR
+Run quietly
+.TP
+\fB\-s\fR, \fB\-\-permutate\fR
+Try permutating the passwords (currently only
+supports switching first character to uppercase)
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+Print version and exit
+.SH REPORTING BUGS
+Via e-mail to Henning Noren <confusion42@users.sourceforge.net> or report on project page at http://pdfcrack.sourceforge.net/
+.SH AUTHOR
+Henning Noren
+.SH COPYRIGHT
+Copyright \(co 2009 Henning Noren <confusion42@users.sourceforge.net>
+.br
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
