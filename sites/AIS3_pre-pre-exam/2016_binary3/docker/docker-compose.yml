@@ -1,0 +1,19 @@
+ysb:
+    build: ./sb
+    volumes:
+        - ./sb/yuawn:/home/ysb:ro
+        - ./sb/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10100:4597"
+    expose:
+        - "4597"
+
+simpleecho:
+    build: ./simpleecho
+    volumes:
+        - ./simpleecho/maps:/home/simpleecho:ro
+        - ./simpleecho/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10101:4597"
+    expose:
+        - "4597"

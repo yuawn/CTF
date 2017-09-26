@@ -1,0 +1,9 @@
+simpleecho:
+    build: ./
+    volumes:
+        - ./maps:/home/simpleecho:ro
+        - ./xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10101:4597"
+    expose:
+        - "4597"
