@@ -2,7 +2,7 @@
 # -*- coding: ascii -*-
 from pwn import *
 
-#FLAG{sh3llc0ding_w1th_op3n_r34d_writ3}
+#ais3{r34d_0p3n_r34d_Writ3_c4ptur3_th3_fl4g_sh3llc0ding_1s_s0_fUn_y0ur_4r3_4_g0od_h4ck3r_h4h4}
 
 host = 'quiz.ais3.org'
 port = 9563
