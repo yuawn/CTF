@@ -4,9 +4,6 @@ from pwn import *
 
 # ais3{hav3_Y0U_successfu11Y_sO1v3d_Y3T_another_0rw}
 
-e = ELF('')
-l = ELF('')
-
 context.arch = 'amd64'
 
 host , port = '10.13.2.43' , 10739

