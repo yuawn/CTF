@@ -7,7 +7,7 @@ c = a * flag[i] + 9011
 fwrite( c , 4 , 1 , enc_fd )
 ```
 * decrypt回去：
-```python=
+```python
 #!/usr/bin/env python
 from pwn import *
 import re
