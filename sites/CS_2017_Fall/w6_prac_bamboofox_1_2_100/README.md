@@ -5,7 +5,7 @@
 * Modify data pointer of `struct item itemlist[100]` on bss.
 * Leak Libc and got hijacking.
 * `atoi()` -> `system`.
-* `atio('sh')` -> `system(sh)`.
+* `atoi(input_buf)` -> `atio('sh')` -> `system(sh)`.
 
 ```python
 #!/usr/bin/env python
