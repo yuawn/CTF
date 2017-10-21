@@ -2,7 +2,7 @@
 ## craxme 2 & 3 100
 * First `fmt` -> Overwrite `puts` got with `0x400747` for many times of `fmt`, and also leak `libc`.
 * Second `fmt` -> Overwrite `printf_GOT` with `system`.
-* Third time `printf( Input )` -> `system( Input )` -> `system( "sh" )`
+* Third time `printf( Input )` -> `system( Input )` -> `system( "sh" )`.
 
 ```python
 #!/usr/bin/env python2

