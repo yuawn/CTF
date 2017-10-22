@@ -8,9 +8,7 @@ one         -> 0xf0274
 ```
 * It has only 4 bits unpredictable.
 * So get the shell with probability about 1/16.
-* BTW, if use common way of `ret2libc`, you need to bypass `ASLR` first,
-* so you need to call `printf` for you to leak address, but it will use
-* lots of stack so that it will write on the `r--` section, then crash first. 
+> BTW, if use common way of `ret2libc`, you need to bypass `ASLR` first, so you need to call `printf` for you to leak address, but it will use lots of stack so that it will write on the `r--` section, then crash first. 
 
 ```python
 #!/usr/bin/env python2
