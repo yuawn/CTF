@@ -84,7 +84,7 @@ y.sendline( 'sh' )
 
 sleep(0.7)
 
-y.sendline( 'cat /home/`whoami`/flag' )
+y.sendline( 'cat /home/`whoami`/R3alflag' )
 
 y.interactive()
 ```
