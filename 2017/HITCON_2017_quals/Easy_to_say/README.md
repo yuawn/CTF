@@ -1,6 +1,6 @@
 # Easy to say
 ## Misc 144
-## 139 solved
+> 139 solved
 
 * Get the `rwx` address, write shellcode on it.
 ```asm

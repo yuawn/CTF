@@ -1,6 +1,6 @@
 # Secret FS
 ## Crypto , Pwn 195
-## 69 solved
+> 69 solved
 
 * Bypass the check, then overflow the `e` in global.
 * `.txt` -> `t` -> e = 0x74 = 116

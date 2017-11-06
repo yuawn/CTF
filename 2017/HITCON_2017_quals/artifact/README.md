@@ -1,4 +1,4 @@
-# 完美無瑕~Impeccable Artifact~
+# 完美無瑕\~Impeccable Artifact\~
 ## Perfection , Pwn 192
 > 72 solved
 * SECCOMP
