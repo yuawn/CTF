@@ -29,6 +29,6 @@
 ```
 * `read`,`write`,`fstat`,`lseek` are directly allowed.
 * `mmap` and `mprotect` are killed when the third arg is odd, because the third arg for `mmap` and `mprotect` are prot of the memory, the execution bit is not allowed to be set.
-* When the syscall is not all of above and syscall number of it is equal to the third arg, it could pass the seccomp rule.
+* When the syscall is not all of above and the syscall number of it is equal to the third arg, it could pass the seccomp rule.
 * Therefor, `open` is great for this XD
 * In the end, ORW.
