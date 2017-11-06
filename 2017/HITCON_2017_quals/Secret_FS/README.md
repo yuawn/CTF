@@ -4,15 +4,7 @@
 
 * Bypass the check, then overflow the `e` in global.
 * `.txt` -> `t` -> e = 0x74 = 116
-$e1 = 3$
-$e2 = 116$
-
-$xgcd( 3 , 116 ) = 39 * 3 - 1 * 116 = 1$
-
-$c_1 = m^{3}   \mod N$
-$c_2 = m^{116} \mod N$
-
-$c_1^{39} * c_2^{-1}  = m^{3*39-1*116} = m^{1} \mod N$
+![](https://github.com/ssspeedgit00/CTF/blob/master/2017/HITCON_2017_quals/Secret_FS/pic.png)
 
 ```python
 #!/usr/bin/env python
