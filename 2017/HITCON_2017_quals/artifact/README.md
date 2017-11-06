@@ -1,7 +1,6 @@
 # 完美無瑕~Impeccable Artifact~
 ## Perfection , Pwn 192
-## 72 solved
-
+> 72 solved
 * SECCOMP
 * https://github.com/david942j/seccomp-tools
 ```C
