@@ -30,10 +30,10 @@
 * `read`,`write`,`fstat`,`lseek` are directly allowed.
 * `mmap` and `mprotect` are killed when the third arg is odd, because the third arg for `mmap` and `mprotect` are prot of the memory, the execution bit is not allowed to be set.
 * When the syscall is not all of above and the syscall number of it is equal to the third arg, it could pass the seccomp rule.
-* case1: `read`,`write`,`fstat`,`lseek` , these are directly going to `0019 ALLOW`.
 
-* case2: `mmap` and `mprotect` , be judge at `X = args[2] ; 0011:A = X ; 0012 A &= 0x1` ,  if the third argument of these two syscall is odd it will go to `0018 KILL` else go to `0019 ALLOW`.
+* Case1: `read`,`write`,`fstat`,`lseek` , these are directly going to `0019 ALLOW`.
+* Case2: `mmap` and `mprotect` , be judge at `X = args[2] ; 0011:A = X ; 0012 A &= 0x1` ,  if the third argument of these two syscall is odd it will go to `0018 KILL` else go to `0019 ALLOW`.
+* Case3: All others syscall would continue at `0014 if (A == X) goto 0019`, obviously the syscalls with its `args[2]` is equal to syscall number can pass the rules `goto 0019 ALLOW`.
 
-* case3: All others syscall would continue at `0014 if (A == X) goto 0019`, obviously the syscalls with its `args[2]` is equal to syscall number can pass the rules `goto 0019 ALLOW`.
 * Therefor, `open` is great for this XD
 * In the end, ORW.
