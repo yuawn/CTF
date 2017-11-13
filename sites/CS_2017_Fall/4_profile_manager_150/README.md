@@ -155,5 +155,3 @@ while True:
         y.close()
 
 ```
-```
-```
