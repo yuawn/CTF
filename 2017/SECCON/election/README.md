@@ -1,4 +1,4 @@
-# election
+# Election
 ## Pwn
 > 54 solves
 * Vote `Ojima` to write everywhere.
