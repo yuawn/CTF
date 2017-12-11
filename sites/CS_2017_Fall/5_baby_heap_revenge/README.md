@@ -1,6 +1,6 @@
 # HW5
 ## baby_heap_revenge 150
-* 8 bytes overflow.
+* 8 bytes heap overflow.
 * `_int_free` in `sysmalloc` trick.
 * Forge `top chunk` size.
 * `malloc` a size larger than size of top chunk.
