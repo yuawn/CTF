@@ -4,7 +4,7 @@
 * General way of angr.
 * From avoid[] list get some input.
 * Set constrians of input to continue.
-```python=
+```python
 #!/usr/bin/env python
 import angr
 
