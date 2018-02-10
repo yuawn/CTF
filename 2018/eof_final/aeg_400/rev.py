@@ -2,8 +2,6 @@
 from pwn import *
 import base64
 
-# FLAG{FindBufferOverflowAmongTensofFunctions}
-
 host , port = '10.141.0.202' , 8989
 y = remote( host , port )
 
