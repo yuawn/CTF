@@ -7,8 +7,8 @@
 * [pwnable.tw](https://pwnable.tw) -> yuawn🇹🇼 😇🍊🐟🔓🤖🐻☠️
 ### Team: DoubleSigma
 ## Map
-* [2018 SECCON Final](https://github.com/ssspeedgit00/CTF/tree/master/2018/seccon_fianl)
-* [2018 EDU CTF 台大、交大、台科大資安課期末CTF](https://github.com/ssspeedgit00/CTF/tree/master/2018/2017_Fall_Edu-CTF_AIS3-EOF-CTF)
+* [2018 Codegate CTF](https://github.com/ssspeedgit00/CTF/tree/master/2018/Codegate)
+* [2018 EDU CTF (CS 2017 Fall 台大、交大、台科大資安課期末CTF)](https://github.com/ssspeedgit00/CTF/tree/master/2018/2017_Fall_Edu-CTF_AIS3-EOF-CTF)
 * [2018 AIS3 EOF Final](https://github.com/ssspeedgit00/CTF/tree/master/2018/eof_final)
 * [HITCON CTF 2017 quals](https://github.com/ssspeedgit00/CTF/tree/master/2017/HITCON_2017_quals)
 * CS 2017 Fall [csie.ctf.tw](https://github.com/ssspeedgit00/CTF/tree/master/sites/CS_2017_Fall)
