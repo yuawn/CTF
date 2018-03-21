@@ -7,11 +7,11 @@
 * [pwnable.tw](https://pwnable.tw) -> yuawn🇹🇼 😇🍊🐟🔓🤖🐻☠️
 ### Team: DoubleSigma
 ## Map
-* [2018 Codegate CTF](https://github.com/ssspeedgit00/CTF/tree/master/2018/Codegate)
-* [2018 EDU CTF (CS 2017 Fall 台大、交大、台科大資安課期末CTF)](https://github.com/ssspeedgit00/CTF/tree/master/2018/2017_Fall_Edu-CTF_AIS3-EOF-CTF)
-* [2018 AIS3 EOF Final](https://github.com/ssspeedgit00/CTF/tree/master/2018/eof_final)
-* [HITCON CTF 2017 quals](https://github.com/ssspeedgit00/CTF/tree/master/2017/HITCON_2017_quals)
-* CS 2017 Fall [csie.ctf.tw](https://github.com/ssspeedgit00/CTF/tree/master/sites/CS_2017_Fall)
-* [AIS3 Final](https://github.com/ssspeedgit00/CTF/tree/master/2017/AIS3_final)
+* [26th, 2018 Codegate CTF](https://github.com/ssspeedgit00/CTF/tree/master/2018/Codegate)
+* [1st, 2018 EDU CTF (CS 2017 Fall 台大、交大、台科大資安課期末CTF)](https://github.com/ssspeedgit00/CTF/tree/master/2018/2017_Fall_Edu-CTF_AIS3-EOF-CTF)
+* [1st, 2018 AIS3 EOF Final](https://github.com/ssspeedgit00/CTF/tree/master/2018/eof_final)
+* [29th, HITCON CTF 2017 quals](https://github.com/ssspeedgit00/CTF/tree/master/2017/HITCON_2017_quals)
+* CS 2017 Fall [1st, csie.ctf.tw](https://github.com/ssspeedgit00/CTF/tree/master/sites/CS_2017_Fall)
+* [3rd, AIS3 Final](https://github.com/ssspeedgit00/CTF/tree/master/2017/AIS3_final)
 ![](https://github.com/ssspeedgit00/CTF/blob/master/2017/HITCON_2017_Final/photo.jpg)
 ![](https://github.com/ssspeedgit00/CTF/blob/master/2018/eof_final/a.jpg)
