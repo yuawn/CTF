@@ -1,5 +1,6 @@
 # coconut
 ## Main (200 pts) — 41 solves
+* Just for fun XD.
 ```python
 #!/usr/bin/env python
 from pwn import *

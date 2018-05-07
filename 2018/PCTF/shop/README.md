@@ -2,8 +2,8 @@
 ## 84 solves
 * Overflow pointer of `name`.
 * Change name to overwrite fake fd -> leak.
-* Overwrite  pointer of `name` to fake fd;
-* Change name to gothijacking.
+* Checkout to overflow  pointer of `name` to fake fd;
+* Change name -> gothijacking.
 ```python
 #!/usr/bin/env python
 from pwn import *
