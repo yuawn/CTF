@@ -34,9 +34,8 @@ while True:
         c = s[i].split( '\t' )
         arg = c[2].split( ', ' )
 
-        if c[1] == 'notl':
-            if arg[0] not in p:
-                ans.append( int( c[0] ) )
+        if c[1] == 'notl' and arg[0] not in p:
+            ans.append( int( c[0] ) )
 
         if c[1] == 'notl':
             continue
@@ -55,10 +54,7 @@ while True:
                 if arg[0] not in p:
                     p.append( arg[0] )
                 if c[1] == 'movl':
-                    try:
-                        del p[ p.index( arg[1] ) ]
-                    except:
-                        pass
+                    del p[ p.index( arg[1] ) ]
         else:
             ans.append( int( c[0] ) )
 
