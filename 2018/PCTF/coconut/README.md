@@ -17,10 +17,9 @@ while True:
     except:
         y.interactive()
 
-    print y.recvuntil( 'ze:' )
+    y.recvuntil( 'ze:' )
 
-    s = y.recvuntil( 'ret' )
-    s = s.split( '\n' )
+    s = y.recvuntil( 'ret' ).split( '\n' )
 
     y.recvuntil( '>=' )
     a = int( y.recvuntil( ' ' )[:-1] )
@@ -30,8 +29,6 @@ while True:
     ans = []
     p = []
     p.append( s[b].split( '\t' )[2].split( ', ' )[0] )
-    l = int( s[-1].split( '\t' )[0] )
-    log.success( 'a -> %d  b -> %d l -> %d' % ( a , b , l ) )   
 
     for i in range( b - 1 , a - 1 , -1 ):
         c = s[i].split( '\t' )
@@ -39,7 +36,6 @@ while True:
 
         if c[1] == 'notl':
             if arg[0] not in p:
-                l = l - 1
                 ans.append( int( c[0] ) )
 
         if c[1] == 'notl':
@@ -47,8 +43,7 @@ while True:
 
         if arg[1] in p:
             if c[1] == 'leal':
-                l1 = arg[0][1:-1].split(',')[0].replace( 'r' , 'e' )
-                l2 = arg[0][1:-1].split(',')[1].replace( 'r' , 'e' )
+                l1 , l2 = arg[0][1:-1].split(',')[0].replace( 'r' , 'e' ) , arg[0][1:-1].split(',')[1].replace( 'r' , 'e' )
                 if l1 not in p:
                     p.append( l1 )
                 if l2 not in p:
@@ -65,8 +60,8 @@ while True:
                     except:
                         pass
         else:
-            l = l - 1
             ans.append( int( c[0] ) )
+
     ans.sort()
 
     t = 0
@@ -85,7 +80,6 @@ while True:
 
     d += str( ans[-1] ) + '\n'
     y.send( d + '#\n' )
-    log.critical( 'threshold -> %d l -> %d' % ( th , l ) )
 
 y.interactive()
 ```
