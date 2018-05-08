@@ -1,5 +1,6 @@
 # shop
 ## 84 solves
+* Guessing until checkout all.
 * Overflow pointer of `name`.
 * Change name to overwrite fake fd -> leak.
 * Checkout to overflow  pointer of `name` to fake fd;
