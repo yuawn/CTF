@@ -3,6 +3,11 @@
 ## Ranking: 22
 * Overwrite the pointer of program name, and trigger `SSP` -> leak information.
 * Get serveral `libc`.
+```
+/opt/ctf/babypwn/bin/libs/libc-8548e4731a83e6ed3fc167633d28c21f.so
+/babypwn/bin/libs/libc-61f5a3ac836ded55a092041ff497d7fa.so
+/babypwn/bin/libs/libc-e9010796528c812dfe1d0c527b07110f.so
+```
 ```c
     char asdf[1024];
     long long index = 0;
