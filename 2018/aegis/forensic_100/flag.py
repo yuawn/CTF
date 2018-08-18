@@ -1,20 +1,9 @@
 #!/usr/bin/env python
 from pwn import *
 
+# AEGIS{023def88wws5dsu88d85d5dfgf5}
 
 # gf5}u88d85d5dfef88wws5dsAEGIS{023d
-# gf5} ru88d85d5d fef88ws5ds AEGIS{023d
-
-# 
-
-
-# gf5} u88d 85d5d fef88 ws5ds AEGIS {023d
-
-# gf5} u88d 85d5 dfef 88ws 5dsAEGIS{023d
-# AEGIS{023du88d85d5dfef88ws5dsgf5}
-# AEGIS{023d fef88ws5ds u88d85d5dr gf5}
-# AEGIS{023dfef88ws5dsu88d85d5drgf5}
-# 
 
 '''
 0x29436 \x81 g
@@ -37,7 +26,6 @@ from pwn import *
 0x2bb9c E f
 0x2bbde V 8
 0x2bc4a X 8
-0x2bc86   w ###
 0x2bcbf b w
 0x2bd28 ^ s
 0x2bd64 q 5
@@ -56,33 +44,13 @@ from pwn import *
 0x2c9d6 U d
 '''
 
-
-
 a , b = open( './Lenna_left.bmp' ).read() , open( './Lenna_right.bmp' ).read()
 
-print hex(len(a)) , hex(len(a))
-
-aa = ''
 flag = ''
-x = ''
 
-t = 0
-#old = 0x29436
-
-for i in xrange( 0x30036 ):
-    if a[i] != b[i]:
-        #print hex( i - old )
-        flag += b[i]
-        #old = i
-        #print flag
-        print hex(i) , a[i] , b[i]
-
-'''
 for i , j in zip( a , b ):
     if i != j:
-        t += 1
         flag += j
         print i , j
-'''
 
-print flag , t
+print flag

