@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 from pwn import *
 
-# AEGIS{023def88wws5dsu88d85d5dfgf5}
+# AEGIS{023def88ws5dsu88d85d5dfgf5}
 
-# gf5}u88d85d5dfef88wws5dsAEGIS{023d
+# gf5}u88d85d5dfef88ws5dsAEGIS{023d
 
 '''
 0x29436 \x81 g
