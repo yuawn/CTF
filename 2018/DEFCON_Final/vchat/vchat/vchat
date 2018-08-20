@@ -1,4 +1,0 @@
-#!/bin/bash
-read -n 1024 VCHAT_USER
-echo $VCHAT_USER@$VCHAT_SERVER
-timeout 240 /vbot $VCHAT_SERVER $VCHAT_USER $VCHAT_MESSAGE >/dev/null 2>&1 0<&1 &
