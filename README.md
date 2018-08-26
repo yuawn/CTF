@@ -19,5 +19,6 @@
 * [29th, HITCON CTF 2017 quals](https://github.com/ssspeedgit00/CTF/tree/master/2017/HITCON_2017_quals)
 * [1st, CS 2017 Fall csie.ctf.tw](https://github.com/ssspeedgit00/CTF/tree/master/sites/CS_2017_Fall)
 * [3rd, AIS3 Final 2017](https://github.com/ssspeedgit00/CTF/tree/master/2017/AIS3_final)
+![defcon](https://github.com/ssspeedgit00/CTF/blob/master/2018/DEFCON_Final/defcon.jpg)
 ![](https://github.com/ssspeedgit00/CTF/blob/master/2017/HITCON_2017_Final/photo.jpg)
 ![](https://github.com/ssspeedgit00/CTF/blob/master/2018/eof_final/a.jpg)
