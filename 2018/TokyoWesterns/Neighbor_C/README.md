@@ -1,5 +1,5 @@
 # Neighbor C
-* Guess the stack offset, modify the pointer whitch point to `stderr` file struct to point to its `_fileno`: `0x20 ->0x90`.
+* Guess the stack offset, modify the pointer which point to `stderr` file struct to point to its `_fileno`: `0x20 ->0x90`.
 * Use format string attack to overwrite `stderr->_fileno` 2 to 1.
 * Got the output, when guess right.
 * Leak libc , stack.

@@ -1,7 +1,7 @@
 # Swap returns
 * Swap `atoi` , `printf` to leak `stack`.
 * Swap( a , &a ) -> *a = a.
-* Swap( `0x601526` , &`0x601526` ).
+* Swap( `0x601526` , `&0x601526` ).
 * Swap( `0x601526 - 6` , `printf GOT - 6` ).
 * `printf -> 0x56510` , `one gadget -> 0x45526`.
 * Overwrite `printf GOT` last two byte to `0x1526`, gues it add with carry.
