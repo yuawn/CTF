@@ -207,8 +207,8 @@ o = open( 'bc_fake' , 'w+' )
 o.write( verify_flag.__code__.co_code )
 o.close()
 ```
-* Compile the `flag.py`, got `fake.pyc`.
-* Overwrite the `verify_flag.__code__.co_code` in fake.pyc with the one of `origin.py`, got ``
+* Compile the `fake.py`, got `fake.pyc`.
+* Overwrite the `verify_flag.__code__.co_code` in fake.pyc with the one of `origin.py`, got `new.pyc`.
 * Use `uncompyle2` decompile `new.pyc`:
 ```python
 #Embedded file name: fake.py
