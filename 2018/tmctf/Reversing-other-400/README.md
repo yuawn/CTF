@@ -1,5 +1,5 @@
 # Trend Micro CTF - Reversing other 400
-* TMCTF{SlytherinPastTheReverser}
+- TMCTF{SlytherinPastTheReverser}
 * Stupid way :P
 * Create a function `verify_flag` which has same `verify_flag.__code__.co_consts` , `verify_flag.__code__.co_varnames` , `verify_flag.__code__.co_names` and the same length of `verify_flag.__code__.co_code` in `fake.py`.
 ```python
