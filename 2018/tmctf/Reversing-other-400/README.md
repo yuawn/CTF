@@ -208,7 +208,7 @@ o.write( verify_flag.__code__.co_code )
 o.close()
 ```
 * Compile the `fake.py`, got `fake.pyc`.
-* Overwrite the `verify_flag.__code__.co_code` in fake.pyc with the one of `origin.py`, got `new.pyc`.
+* Overwrite the `verify_flag.__code__.co_code` in fake.pyc with the one of `parseltongue.py`, got `new.pyc`.
 * Use `uncompyle2` to decompile `new.pyc`:
 ```python
 #Embedded file name: fake.py
