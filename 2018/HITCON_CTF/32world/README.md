@@ -1,5 +1,5 @@
 # 32 world
-* Use `sysenter` to bypass the constrains.
+* Use `sysenter` to bypass the constrain.
 ```python
 #!/usr/bin/env python
 from pwn import *
