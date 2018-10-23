@@ -3,7 +3,7 @@
 > hitcon{Go_ahead,_traveler,_and_get_ready_for_deeper_fear.}
 * NX disable.
 * `swap` function doesn't check the index, and the `machine` == `stack[-1]`.
-```clike
+```c
 void swap_()
 {
   unsigned int tmp;
@@ -55,7 +55,7 @@ y.interactive()
 * Kernel entry is 0, if we can let `but` == 0, so that  we are able to overwrite the kernel memory.
 * Hypervisor will get the return value of kmalloc().
 * `Hypercall read handler`:
-```clike
+```c
 vaddr = *(_DWORD *)(vm->run + *(_QWORD *)(vm->run + 40LL));
 if ( (unsigned __int64)vaddr >= vm->mem_size )
      __assert_fail("0 <= (offset) && (offset) < vm->mem_size", "hypercall.c", 0x7Eu, "handle_rw");
