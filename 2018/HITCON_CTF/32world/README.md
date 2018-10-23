@@ -1,4 +1,12 @@
 # 32 world
+```
+ line  CODE  JT   JF      K
+=================================
+ 0000: 0x20 0x00 0x00 0x0000000c  A = instruction_pointer >> 32
+ 0001: 0x15 0x00 0x01 0x00000000  if (A != 0x0) goto 0003
+ 0002: 0x06 0x00 0x00 0x00000000  return KILL
+ 0003: 0x06 0x00 0x00 0x7fff0000  return ALLOW
+```
 * Use `sysenter` to bypass the constrain.
 ```python
 #!/usr/bin/env python
