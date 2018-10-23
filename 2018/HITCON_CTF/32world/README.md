@@ -7,7 +7,7 @@
  0002: 0x06 0x00 0x00 0x00000000  return KILL
  0003: 0x06 0x00 0x00 0x7fff0000  return ALLOW
 ```
-* Use `sysenter` to bypass the constrain.
+* Use `sysenter` to bypass the constraint.
 ```python
 #!/usr/bin/env python
 from pwn import *
