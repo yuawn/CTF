@@ -3,7 +3,7 @@ from pwn import *
 
 # X-MAS{r34d1n6_f0rb1dd3n_b00k5_15_50_much_fun}
 
-e = ELF( './elf5' )
+e = ELF( './elf' )
 context.arch = 'amd64'
 
 host , port = '199.247.6.180' , 10004
