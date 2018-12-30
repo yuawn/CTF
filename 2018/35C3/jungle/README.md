@@ -26,18 +26,18 @@ flag        <plate><दाल></दाल></plate>
 <?xml version="1.0" encoding="UTF-8"?>
 <meal>
     <state>
-        <drinks><value>0</value></drinks>           <!-- L -->
-        <drinks><value>4294967296</value></drinks>  <!-- R -->
+        <drinks><value>0</value></drinks> <!-- L -->
+        <drinks><value>4294967296</value></drinks> <!-- R -->
     </state>
 
     <course>
         <plate><paella>1</paella></plate>
-        <plate><불고기></불고기></plate>    <!--copy R-->
+        <plate><불고기></불고기></plate> <!--copy R-->
 
         <plate><paella>1</paella></plate> 
-        <plate><불고기></불고기></plate>    <!--copy L-->
+        <plate><불고기></불고기></plate> <!--copy L-->
 
-        <plate><לאַטקעס></לאַטקעס></plate>  <!-- L - R -->
+        <plate><לאַטקעס></לאַטקעס></plate> <!-- L - R -->
 
         <plate><paella>-2</paella></plate>
 
@@ -50,12 +50,12 @@ flag        <plate><दाल></दाल></plate>
         <plate><æblegrød></æblegrød></plate> <!--branch to course[3] if (L - R) == -1 (found)-->
 
         <plate><paella>1</paella></plate>
-        <plate><불고기></불고기></plate>    <!--copy R-->
+        <plate><불고기></불고기></plate> <!--copy R-->
 
         <plate><paella>1</paella></plate> 
-        <plate><불고기></불고기></plate>    <!--copy L-->
+        <plate><불고기></불고기></plate> <!--copy L-->
 
-        <plate><rösti></rösti></plate>  <!--add L R-->
+        <plate><rösti></rösti></plate> <!--add L R-->
 
         <plate><paella>1</paella></plate>
         <plate><paella>2</paella></plate>
@@ -64,7 +64,7 @@ flag        <plate><दाल></दाल></plate>
         <plate><حُمُّص></حُمُّص></plate> <!--div mid-->
 
         <plate><paella>0</paella></plate>
-        <plate><불고기></불고기></plate>    <!--copy mid-->
+        <plate><불고기></불고기></plate> <!--copy mid-->
 
         <plate><ラーメン></ラーメン></plate> <!--cmp chef-drinks-->
 
@@ -75,7 +75,7 @@ flag        <plate><दाल></दाल></plate>
         <plate><æblegrød></æblegrød></plate> <!--branch to course[2] if(mid > chef-drinks)-->
 
         <plate><paella>1</paella></plate>
-        <plate><γύρος></γύρος></plate>  <!--del L -> L = mid -->
+        <plate><γύρος></γύρος></plate> <!--del L -> L = mid -->
 
         <plate><paella>0</paella></plate>
         <plate><paella>1</paella></plate>
@@ -85,7 +85,7 @@ flag        <plate><दाल></दाल></plate>
 
     <course>
         <plate><paella>2</paella></plate>
-        <plate><γύρος></γύρος></plate>  <!--del R-->
+        <plate><γύρος></γύρος></plate> <!--del R-->
 
         <plate><paella>1</paella></plate>
         <plate><paella>1</paella></plate>
@@ -103,8 +103,8 @@ flag        <plate><दाल></दाल></plate>
 
         <plate><दाल></दाल></plate> <!--flag-->
 
-        <plate><paella>4294967296</paella></plate>  <!--push R-->
-        <plate><paella>0</paella></plate>           <!--push R-->
+        <plate><paella>4294967296</paella></plate> <!--push R-->
+        <plate><paella>0</paella></plate> <!--push R-->
 
         <plate><paella>0</paella></plate>
         <plate><paella>1</paella></plate>
