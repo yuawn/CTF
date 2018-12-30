@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meal>
+    <course>
+        <!--<plate><宫保鸡丁></宫保鸡丁></plate>-->
+
+        <plate><paella>1</paella></plate>
+        <plate><불고기></불고기></plate>    <!--copy R-->
+
+        <plate><paella>1</paella></plate> 
+        <plate><불고기></불고기></plate>    <!--copy L-->
+
+        <plate><לאַטקעס></לאַטקעס></plate>  <!--sub-->
+
+        <plate><paella>-2</paella></plate>
+
+        <plate><stroopwafels></stroopwafels></plate>
+
+        <plate><paella>1</paella></plate>
+        <plate><paella>2</paella></plate>
+        <plate><köttbullar></köttbullar></plate> <!--insert-->
+
+        <plate><æblegrød></æblegrød></plate>
+
+        <plate><paella>1</paella></plate>
+        <plate><불고기></불고기></plate>    <!--copy R-->
+
+        <plate><paella>1</paella></plate> 
+        <plate><불고기></불고기></plate>    <!--copy L-->
+
+        <plate><rösti></rösti></plate>  <!--add-->
+
+        <plate><paella>1</paella></plate>
+        <plate><paella>2</paella></plate>
+        <plate><köttbullar></köttbullar></plate> <!--insert-->
+
+        <plate><حُمُّص></حُمُّص></plate> <!--div mid-->
+
+        <plate><paella>0</paella></plate>
+        <plate><불고기></불고기></plate>    <!--copy mid-->
+
+        <plate><ラーメン></ラーメン></plate> <!--cmp-->
+
+        <plate><paella>1</paella></plate>
+        <plate><paella>1</paella></plate>
+        <plate><köttbullar></köttbullar></plate> <!--insert-->
+        
+        <plate><æblegrød></æblegrød></plate> <!--branch-->
+
+        <plate><paella>1</paella></plate>
+        <plate><γύρος></γύρος></plate>  <!--del L-->
+
+        <plate><paella>0</paella></plate>
+        <plate><paella>1</paella></plate>
+        <plate><æblegrød></æblegrød></plate> <!--branch-->
+
+    </course>
+
+    <course>
+        <plate><paella>2</paella></plate>
+        <plate><γύρος></γύρος></plate>  <!--del R-->
+
+        <plate><paella>1</paella></plate>
+        <plate><paella>1</paella></plate>
+        <plate><köttbullar></köttbullar></plate> <!--insert-->
+
+        <plate><köttbullar></köttbullar></plate> <!--insert-->
+
+        <plate><paella>0</paella></plate>
+        <plate><paella>1</paella></plate>
+        <plate><æblegrød></æblegrød></plate> <!--branch-->
+    </course>
+
+    <course>
+        <plate><Борщ></Борщ></plate>
+
+        <plate><दाल></दाल></plate>
+
+        <plate><paella>4294967296</paella></plate>
+        <plate><paella>0</paella></plate>
+
+        <plate><paella>0</paella></plate>
+        <plate><paella>1</paella></plate>
+        <plate><æblegrød></æblegrød></plate> <!--branch-->
+    </course>
+
+    <state>
+        <drinks><value>0</value></drinks>
+        <drinks><value>4294967296</value></drinks>
+    </state>
+</meal>
