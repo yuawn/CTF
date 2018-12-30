@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meal>
-    <course>
-        <!--<plate><宫保鸡丁></宫保鸡丁></plate>-->
+    <state>
+        <drinks><value>0</value></drinks>           <!-- L -->
+        <drinks><value>4294967296</value></drinks>  <!-- R -->
+    </state>
 
+    <course>
         <plate><paella>1</paella></plate>
         <plate><불고기></불고기></plate>    <!--copy R-->
 
         <plate><paella>1</paella></plate> 
         <plate><불고기></불고기></plate>    <!--copy L-->
 
-        <plate><לאַטקעס></לאַטקעס></plate>  <!--sub-->
+        <plate><לאַטקעס></לאַטקעס></plate>  <!-- L - R -->
 
         <plate><paella>-2</paella></plate>
 
-        <plate><stroopwafels></stroopwafels></plate>
+        <plate><stroopwafels></stroopwafels></plate> <!--cmp (L - R) > -2 -->
 
         <plate><paella>1</paella></plate>
         <plate><paella>2</paella></plate>
         <plate><köttbullar></köttbullar></plate> <!--insert-->
 
-        <plate><æblegrød></æblegrød></plate>
+        <plate><æblegrød></æblegrød></plate> <!--branch to course[3] if (L - R) == -1 (found)-->
 
         <plate><paella>1</paella></plate>
         <plate><불고기></불고기></plate>    <!--copy R-->
@@ -27,7 +30,7 @@
         <plate><paella>1</paella></plate> 
         <plate><불고기></불고기></plate>    <!--copy L-->
 
-        <plate><rösti></rösti></plate>  <!--add-->
+        <plate><rösti></rösti></plate>  <!--add L R-->
 
         <plate><paella>1</paella></plate>
         <plate><paella>2</paella></plate>
@@ -38,20 +41,20 @@
         <plate><paella>0</paella></plate>
         <plate><불고기></불고기></plate>    <!--copy mid-->
 
-        <plate><ラーメン></ラーメン></plate> <!--cmp-->
+        <plate><ラーメン></ラーメン></plate> <!--cmp chef-drinks-->
 
         <plate><paella>1</paella></plate>
         <plate><paella>1</paella></plate>
         <plate><köttbullar></köttbullar></plate> <!--insert-->
         
-        <plate><æblegrød></æblegrød></plate> <!--branch-->
+        <plate><æblegrød></æblegrød></plate> <!--branch to course[2] if(mid > chef-drinks)-->
 
         <plate><paella>1</paella></plate>
-        <plate><γύρος></γύρος></plate>  <!--del L-->
+        <plate><γύρος></γύρος></plate>  <!--del L -> L = mid -->
 
         <plate><paella>0</paella></plate>
         <plate><paella>1</paella></plate>
-        <plate><æblegrød></æblegrød></plate> <!--branch-->
+        <plate><æblegrød></æblegrød></plate> <!--branch to course[1]-->
 
     </course>
 
@@ -63,28 +66,23 @@
         <plate><paella>1</paella></plate>
         <plate><köttbullar></köttbullar></plate> <!--insert-->
 
-        <plate><köttbullar></köttbullar></plate> <!--insert-->
+        <plate><köttbullar></köttbullar></plate> <!-- insert -> R = mid -->
 
         <plate><paella>0</paella></plate>
         <plate><paella>1</paella></plate>
-        <plate><æblegrød></æblegrød></plate> <!--branch-->
+        <plate><æblegrød></æblegrød></plate> <!--branch to course[1]-->
     </course>
 
     <course>
-        <plate><Борщ></Борщ></plate>
+        <plate><Борщ></Борщ></plate> <!--dec chef-drinks-->
 
-        <plate><दाल></दाल></plate>
+        <plate><दाल></दाल></plate> <!--flag-->
 
-        <plate><paella>4294967296</paella></plate>
-        <plate><paella>0</paella></plate>
+        <plate><paella>4294967296</paella></plate>  <!--push R-->
+        <plate><paella>0</paella></plate>           <!--push R-->
 
         <plate><paella>0</paella></plate>
         <plate><paella>1</paella></plate>
-        <plate><æblegrød></æblegrød></plate> <!--branch-->
+        <plate><æblegrød></æblegrød></plate> <!--branch to course[1]-->
     </course>
-
-    <state>
-        <drinks><value>0</value></drinks>
-        <drinks><value>4294967296</value></drinks>
-    </state>
 </meal>

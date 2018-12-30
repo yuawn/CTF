@@ -41,7 +41,7 @@ flag        <plate><दाल></दाल></plate>
 
         <plate><paella>-2</paella></plate>
 
-        <plate><stroopwafels></stroopwafels></plate> <!--cmp arg-->
+        <plate><stroopwafels></stroopwafels></plate> <!--cmp (L - R) > -2 -->
 
         <plate><paella>1</paella></plate>
         <plate><paella>2</paella></plate>
