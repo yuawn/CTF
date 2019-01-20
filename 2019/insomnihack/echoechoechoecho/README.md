@@ -1,5 +1,6 @@
 # insomnihack CTF 2019
 ## echoechoechoecho - 216 , 18 solves
+`INS{echo_echoecho_echo__echoech0echo_echoechoechoecho_bashbashbashbash}`
 * [solve.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/insomnihack/echoechoechoecho/solve.py)
 ### The Challenge
 Input `thisfile` gives us the source code, the input will be appended several `|bash` and be executed by `bash`. Only very few special characters are allowed:
