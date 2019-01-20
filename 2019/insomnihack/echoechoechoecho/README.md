@@ -94,4 +94,3 @@ eval "echo \$(($(cat /tmp/a)))"|/get_flag|(read l;read l;echo $l>/tmp/a;cat;)
 ```
 ### Finally the flag
 `INS{echo_echoecho_echo__echoech0echo_echoechoechoecho_bashbashbashbash}`
-* [solve.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/insomnihack/echoechoechoecho/solve.py)
