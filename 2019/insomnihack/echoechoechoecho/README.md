@@ -26,7 +26,7 @@ def check_input(payload):
 
     return payload
 ```
-Payload can only contain `(` , `)` , `;` , `+` , `$` , `\` , `=` , ` ` , `'` and `echo`, and limited number of uses of them.
+Payload can only contain `(` , `)` , `;` , `+` , `$` , `\` , `=` , ` ` , `'` and `echo`, and limited number of use of them.
 ### What we can use
 * `$$` - bash process id.
 * `$((1+2))` - 3.
