@@ -20,6 +20,7 @@ dec cheif   <plate><Борщ></Борщ></plate>
 flag        <plate><दाल></दाल></plate>
 ```
 * Use them to build binary search.
+* `ncat 35.246.237.11 1 < solve.xml`
 * `<flag>35C3_The_chef_gives_you_his_compliments</flag>`
 
 ```xml
