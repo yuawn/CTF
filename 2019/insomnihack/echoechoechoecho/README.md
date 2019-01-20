@@ -1,5 +1,6 @@
 # insomnihack CTF 2019
 ## echoechoechoecho - 216 , 18 solves
+* [solve.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/insomnihack/echoechoechoecho/solve.py)
 ### The Challenge
 Input `thisfile` gives us the source code, the input will be appended several `|bash` and be executed by `bash`. Only very few special characters are allowed:
 ```python
@@ -29,7 +30,7 @@ Payload can only contain `(` , `)` , `;` , `+` , `$` , `\` , `=` , ` ` , `'` and
 ### What we can use
 * `$$` - bash process id.
 * `$((1+2))` - 3.
-### Variable
+### Variables
 Thus it can not contain any lower case aphebat, but only `echo`.
 * `$a` - `$echo`
 * `$b` - `$echoecho`
@@ -38,7 +39,7 @@ Thus it can not contain any lower case aphebat, but only `echo`.
 ### Bypass the limited number of use
 We can store the special character in the variable. The payload `echo=\=; echo echoecho$echo$$` will output `echoecho=8`. Then we can pass it to `bash` use `|bash`. Other example: `echo=\'; echo echo $echo$$$echo` -> `echo '8'`.
 ### Generate any bumber
-In the secceond `bash`, `$$` is equal to `10` and we can generat `1` by `$(($$==$$))`,`$((10==10))`.For now, we can use `1` and `10` to caculate any number.
+In the seccond `bash`, `$$` is equal to `10` and we can generate `1` by `$(($$==$$))`,`$((10==10))`.For now, we can use `1` and `10` to caculate any number.
 ### To char
 * `echo $'\154\163'` -> `ls`
 ### We are almost done!
@@ -90,5 +91,6 @@ I follow the solution of captcha of <a href="https://hack.more.systems/writeup/2
 ```bash
 eval "echo \$(($(cat /tmp/a)))"|/get_flag|(read l;read l;echo $l>/tmp/a;cat;)
 ```
-### Fianlly
+### Finally the flag
 `INS{echo_echoecho_echo__echoech0echo_echoechoechoecho_bashbashbashbash}`
+* [solve.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/insomnihack/echoechoechoecho/solve.py)
