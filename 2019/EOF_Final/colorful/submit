@@ -1,0 +1,9 @@
+ #!/bin/bash
+
+if (($2 < 4000));
+then
+    a=$((4000 - $2))
+    go run send.go $a $1
+    echo token: $1
+    echo got score: $a
+fi;
