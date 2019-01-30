@@ -63,7 +63,7 @@ getenv:
 	cdq
 	syscall
 ```
-There was an interesting thing, when we linked it with `ld` in ubuntu 18.04, the size of ELF came out was too big, but with the old version of `ld` in ubuntu 16.04 the size will be small enought. Awesome again!
+There was an interesting thing, when we linked it with `ld` in ubuntu 18.04, the size of ELF came out was too big, but with the old version of `ld` in ubuntu 16.04 the size will be small enough. Awesome again!
 
 Upload `hook.so` and overwrite `LD_PRELOAD=./hook.so` then call `slot machine` to trigger `system("/usr/local/clear")`, `getenv` will be hooked by `hook.so` and execute our shellcode.
 * [flag.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/flag.py)
