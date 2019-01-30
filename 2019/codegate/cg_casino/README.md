@@ -47,7 +47,7 @@ There is inforamtion leak by input non numeric chracter when you play `lotto`, b
 ### Exploit
 For now we are able to upload a 0x1000-byte file. We found `slot machine` will call `system("/usr/local/clear")`, So we decided to upload `hook.so` file, hook the function that will be called by `/usr/bin/clear`.
 * hook.S
-```nasm=
+```nasm
 ; nasm -f elf64 hook.S -o hook.o && ld --shared hook.o -o hook.so
 ; ubuntu 16.04 GNU ld (GNU Binutils for Ubuntu) 2.26.1
 [BITS 64]
