@@ -2,7 +2,7 @@
 ## cg_casino
 * `CODEGATE{24cb1590e54e43b254c99404e4f86543}`
 * [hook.S](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/hook.S)
-* [exp.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/flag.py)
+* [flag.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/flag.py)
 ### The challege
 * The files
 ```
@@ -66,5 +66,5 @@ getenv:
 There was an interesting thing, when we linked it with `ld` in ubuntu 18.04, the size of ELF came out was too big, but with the old version of `ld` in ubuntu 16.04 the size will be small enought. Awesome again!
 
 Upload `hook.so` and overwrite `LD_PRELOAD=./hook.so` then call `slot machine` to trigger `system("/usr/local/clear")`, `getenv` will be hooked by `hook.so` and execute our shellcode.
-* [exp.py]()
+* [flag.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/flag.py)
 ### The flag: `CODEGATE{24cb1590e54e43b254c99404e4f86543}`
