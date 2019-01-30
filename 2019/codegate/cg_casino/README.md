@@ -1,8 +1,8 @@
 # Codegate CTF 2019 Preliminary
 ## cg_casino
 * `CODEGATE{24cb1590e54e43b254c99404e4f86543}`
-* [hook.S]()
-* [exp.py]()
+* [hook.S](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/hook.S)
+* [exp.py](https://github.com/ssspeedgit00/CTF/blob/master/2019/codegate/cg_casino/flag.py)
 ### The challege
 * The files
 ```
