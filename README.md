@@ -5,7 +5,7 @@
 ### ID
 * yuawn
 * [pwnable.tw](https://pwnable.tw) -> yuawn🇹🇼 😇🍊🐟🔓🤖🐻☠️
-### Team: DoubleSigma / Balsn
+### Team: DoubleSigma / Balsn 1
 ## Map
 * [6th, Codegate CTF 2019 Preliminary - Balsn](https://github.com/ssspeedgit00/CTF/tree/master/2019/codegate)
 * [1st, AIS3 EOF Final 2019](https://github.com/ssspeedgit00/CTF/tree/master/2019/EOF_Final)
