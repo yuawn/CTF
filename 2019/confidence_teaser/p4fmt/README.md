@@ -270,7 +270,7 @@ clear_user — Zero a block of memory in user space.
 Synopsis
 unsigned long clear_user (void __user * to, unsigned long n);
 ```
-There is `_clear_user(loads->addr, loads->length);` in `load_p4_binary` where `loads->addr` and `loads->length` are controllable, that means we can zero a block of memory everywhere. That's AWOSEOME!
+There is `_clear_user(loads->addr, loads->length);` in `load_p4_binary` where `loads->addr` and `loads->length` are controllable, that means we can zero a block of memory everywhere. That's awesome!
 ### Constraints
 Although we are able to leak the memory, but we can't do the leak and setting up header at the same time with the same binary.
 Execute another time, the address of `cred` has some random offset, but I found the interesting thing:
