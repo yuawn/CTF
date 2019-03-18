@@ -295,7 +295,7 @@ Generate a p4 binary for kernel memory leak first, then set up loads header of s
 Execute shellocde and enjoy the root shell :D
 
 ### Root shell
-![root_shell](https://github.com/yuawn/CTF/blob/master/2019/confidence_teaser/p4fmt/screenshots/root_shell.png)
+![root_shell](https://github.com/yuawn/CTF/blob/master/2019/confidence_teaser/p4fmt/screenshots/root_shell3.png)
 
 exploit:
 ```python
