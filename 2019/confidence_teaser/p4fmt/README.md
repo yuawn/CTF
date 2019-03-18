@@ -178,7 +178,7 @@ if ( !retval )
           }
           ++retval;
           ++loads;
-      }while ( bprm->buf.load_count > retval );
+      }while ( (p4fmt *)(bprm->buf).load_count > retval );
     }
   }
   else{
