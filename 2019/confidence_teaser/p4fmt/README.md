@@ -108,7 +108,7 @@ binary += asm(
 )
 ```
 Result:
-```python
+```sh
 /tmp $ ./hello_word
 [   22.679510] vm_mmap(load_addr=0x400000, length=0x1000, offset=0x0, prot=7)
 Hello World!
