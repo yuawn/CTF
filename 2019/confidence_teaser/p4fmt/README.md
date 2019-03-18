@@ -45,7 +45,7 @@ rootfs:
 
 12 directories, 399 files
 ```
-The `flag` and `p4fmt.ko` kernel module are at the root directory.
+The `flag` and kernel module `p4fmt.ko` are placed in the root directory.
 ```sh
 / $ ls -l flag
 -rw-------    1 root     0               28 Mar 15 21:38 flag
