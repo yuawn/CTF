@@ -2,7 +2,7 @@
 ## p4fmt
 #### Flag: p4{4r3_y0U_4_81n4ry_N1njA?}
 ### The challenge
-![](https://i.imgur.com/NmShaRg.png)
+![desc](https://github.com/yuawn/CTF/blob/master/2019/confidence_teaser/p4fmt/screenshots/desc.png)
 * The files
 ```
 .
@@ -295,17 +295,7 @@ Generate a p4 binary for kernel memory leak first, then set up loads header of s
 Execute shellocde and enjoy the root shell :D
 
 ### Root shell
-```
-/tmp $ ./pwn
-[   17.114933] vm_mmap(load_addr=0x7000000, length=0x1000, offset=0x0, prot=7)
-[   17.115323] vm_mmap(load_addr=0xffffa11a421b5000, length=0x48, offset=0x0, prot=0)
-[   17.115656] clear_user(addr=0xffffa11a421b5f18, length=0x48)
-/tmp # id
-uid=0(root) gid=0 groups=1000
-/tmp # cat /flag
-p4{4r3_y0U_4_81n4ry_N1njA?}
-/tmp #
-```
+![root_shell](https://github.com/yuawn/CTF/blob/master/2019/confidence_teaser/p4fmt/screenshots/root_shell.png)
 
 exploit:
 ```python
