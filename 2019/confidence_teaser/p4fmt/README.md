@@ -260,9 +260,9 @@ struct cred {
 	kernel_cap_t	cap_ambient;	/* Ambient capability set */
     ...
 ```
-If we can overwrite the `uid` and `gid` in `bprm->cred` before `install_exec_creds`, so that it would install the new `cred`!
+If we can overwrite the `uid` and `gid` in `bprm->cred` before calling `install_exec_creds`, so that it would install the new `cred`!
 
-But how to set the `uid` and `gid` to zero, remember there is `_clear_user()`:
+But how to set the `uid` and `gid` to zero, remember there is a funtion named `_clear_user()`:
 ```
 Name
 clear_user — Zero a block of memory in user space.
@@ -270,7 +270,7 @@ clear_user — Zero a block of memory in user space.
 Synopsis
 unsigned long clear_user (void __user * to, unsigned long n);
 ```
-And `_clear_user(loads->addr, loads->length);` in `load_p4_binary`, where `loads->add` and `loads->length` are controllable, that means we can zero a block of memory everywhere. That's AWOSEOME!
+There is `_clear_user(loads->addr, loads->length);` in `load_p4_binary` where `loads->addr` and `loads->length` are controllable, that means we can zero a block of memory everywhere. That's AWOSEOME!
 ### Constraints
 Although we are able to leak the memory, but we can't do the leak and setting up header at the same time with the same binary.
 Execute another time, the address of `cred` has some random offset, but I found the interesting thing:
@@ -287,7 +287,7 @@ Execute another time, the address of `cred` has some random offset, but I found 
 [+] cred -> 0xffff99cb021faa80
 [+] cred -> 0xffff99cb021facc0
 ```
-The address will be the same when execute binary every  five times, don't know the reason...
+The address will be the same when execute the binary every five times, don't know the reason...
 
 ### Exploit
 Generate a p4 binary for kernel memory leak first, then set up loads header of second p4 binary to trigger `_clear_user( bprm->cred + 0x10 , len ); // +0x10 prevent crashing caused by the NULL pointer`.
