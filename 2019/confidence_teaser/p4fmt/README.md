@@ -143,21 +143,21 @@ struct linux_binprm {
 ```
 Binary header will be stored to `bprm->buf[]`, and the part of `load_p4_binary` where it process memory loading:
 ```c
-if ( (p4fmt *)(bprm->buf).arg > 1u )
+if ( (p4fmt)(bprm->buf).arg > 1u )
   return (unsigned int)-EINVAL;
 retval = flush_old_exec(bprm, P4MAG);
 if ( !retval )
 {
   current->personality = 0x800000;
   setup_new_exec(bprm);
-  arg = (p4fmt *)(bprm->buf).arg;
+  arg = (p4fmt)(bprm->buf).arg;
   if ( arg )
   {
     if ( arg != 1 )
       return (unsigned int)-EINVAL;
-      if ( (p4fmt *)(bprm->buf).load_count )
+      if ( (p4fmt)(bprm->buf).load_count )
       {
-        loads = (load *)&buf->magic[ (p4fmt *)(bprm->buf).header_offset ];
+        loads = (load *)&buf->magic[ (p4fmt)(bprm->buf).header_offset ];
         do
         {
           addr = loads->addr;
@@ -178,7 +178,7 @@ if ( !retval )
           }
           ++retval;
           ++loads;
-      }while ( (p4fmt *)(bprm->buf).load_count > retval );
+      }while ( (p4fmt)(bprm->buf).load_count > retval );
     }
   }
   else{
