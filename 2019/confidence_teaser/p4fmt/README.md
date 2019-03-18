@@ -290,7 +290,7 @@ Execute another time, the address of `cred` has some random offset, but I found 
 The address will be the same when execute the binary every five times, don't know the reason...
 
 ### Exploit
-Generate a p4 binary for kernel memory leak first, then set up loads header of second p4 binary to trigger `_clear_user( bprm->cred + 0x10 , len ); // +0x10 prevent crashing caused by the NULL pointer`.
+Generate a p4 binary for kernel memory leak first, then set up loads header of second p4 binary to trigger `_clear_user( bprm->cred | 8 + 0x10 , 0x48 ); // +0x10 prevent crashing caused by the NULL pointer`.
 `install_exec_creds(bprm)` will call `commit_creds(bprm->cred);` and process our new `bprm->cred`, then execute our p4 binary with root privilege!
 Execute shellocde and enjoy the root shell :D
 
