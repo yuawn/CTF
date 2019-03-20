@@ -51,6 +51,39 @@ The `flag` and kernel module `p4fmt.ko` are placed in the root directory.
 -rw-------    1 root     0               28 Mar 15 21:38 flag
 ```
 Only root can read the flag, therefore our the goal is privilege escalation obviously.
+
+init:
+```
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+
+insmod /p4fmt.ko
+
+sleep 2
+
+ln -s /dev/console /dev/ttyS0
+
+cat <<EOF
+====================
+p4fmt
+====================
+
+Kernel challs are always a bit painful.
+No internet access, no SSH, no file copying.
+
+You're stuck with copy pasting base64'd (sometimes static) ELFs.
+But what if there was another solution?
+
+We've created a lightweight, simple binary format for your
+pwning pleasure. It's time to prove your skills.
+
+EOF
+
+setsid cttyhack su pwn
+poweroff -f
+```
 ### p4fmt.ko
 It's a simple kernel module:
 ```c
