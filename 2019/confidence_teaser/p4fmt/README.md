@@ -108,20 +108,20 @@ It first check whether the binary file is start with `"P4"`, if not it will retu
 After some reversing on the function, we can simply figure out the file format of p4 binary:
 ```c
 struct p4fmt{
-    char magic[2] = "P4",
-    int8_t version,
-    int8_t arg,
-    int32_t load_count,
-    int64_t header_offset, // offset to loads
-    int64_t entry,
-    char _gap[header_offset - 0x18],
-    struct load loads[load_count]
+    char magic[2] = "P4";
+    int8_t version;
+    int8_t arg;
+    int32_t load_count;
+    int64_t header_offset; // offset to loads
+    int64_t entry;
+    char _gap[header_offset - 0x18];
+    struct load loads[load_count];
 }
 
 struct load{
-    int64_t addr,
-    int64_t length,
-    int64_t offset
+    int64_t addr;
+    int64_t length;
+    int64_t offset;
 };
 ```
 Version should be 0, otherwise it will `printk("Unknown version")`. There are two loading method determined by `arg`. If arg be 1, it will load the `address, length, offset` from header and do `vm_mmap`.
