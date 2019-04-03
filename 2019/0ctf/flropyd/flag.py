@@ -122,7 +122,7 @@ def br( m1 , m2 ): # branch if [m1] < [m2], if [m1] < [m2] jmp "ret", else jmp "
                 pop_rdx, br_tbl, jmp    # jmp br_tbl[0 or 1]
             )
 
-def migrate( stack ): # stack mogration
+def migrate( stack ): # stack migration
     return flat(
                 pop_rbp, stack - 8, leave_ret
             )
