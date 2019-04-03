@@ -10,7 +10,7 @@ __int64 sub_401794()
   return (unsigned int)(dword_6033A4++ + 1);
 }
 ```
-* Patch it, and reversing.
+* Patch it.
 * flag.py:
 ```python
 #!/usr/bin/env python
