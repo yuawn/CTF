@@ -1,0 +1,133 @@
+#!/usr/bin/env python
+import paramiko
+
+# fb{you_win_the_game_again_again}
+
+client = paramiko.SSHClient()
+#client.load_system_host_keys()
+client.set_missing_host_key_policy( paramiko.AutoAddPolicy() )
+client.connect( 'challenges.fbctf.com' , port = 2222 , username = 'osquerygame' , password = 'osquerygame' )
+
+y = client.invoke_shell()
+#print(repr(client.get_transport()))
+#print("*** Here we go!\n")
+
+def untilPrompt( y , p = False ):
+    a = b''
+    lastlen = 0
+    while True:
+        r = y.recv(65536)
+        assert(len(r) != 0)
+        a += r
+        if p and len(a) - lastlen > 0x1000:
+            lastlen = len(a)
+            print(len(a))
+        if b'y> ' in a[ -len(r) : ]:
+            break
+    return a
+
+
+'''
+action|description
+show|Default action, shows the farm.
+move [src] [dst]|Requests to move animal in SRC field to DST field.
+pickup [src]|Pickup item in SRC field.
+water [...dst]|Water planted herb located at DST.
+plant [...dst]|Plant a herb in the plowed DST.
+
+
+Town Mayor|The sheep wants to be next to the pig. Please move him, but be careful, if he sees you he will run away in less than a second, you need to move fast.|no
+Town Mayor|Please water something that you have planted. You need to pickup a pail first. The sheep was playing with the water pail, if you move him next to his friend he may give it back.|no
+Town Mayor|Please pick something that you have grown. Wait a day after planting a seed and watering then pickup your plants.|no
+Town Mayor|Weeds grow the first day of each season. Be careful, seeds and small plants will be overtaken.|yes
+'''
+
+
+def show():
+    p = 'SELECT * FROM farm WHERE action = \'show\';'
+    y.send( p + '\n' )
+
+def quests():
+    p = 'select * from farm_quests;'
+    y.send( p + '\n' )
+
+def pickup( src ):
+    p = 'SELECT * FROM farm WHERE action = \'pickup\' AND src = %s;' % hex( src )
+    y.send( p + '\n' )
+
+def move( src , dst ):
+    p = 'SELECT * FROM farm WHERE action = \'move\' AND src = %s AND dst = %s;' % ( hex( src ) , hex( dst ) )
+    y.send( p + '\n' )
+
+def _water( dst ):
+    p = 'SELECT * FROM farm WHERE action = \'water\''
+    for i in dst:
+        p += ' AND dst = %s' % hex( i )
+    y.send( p + ';\n' )
+
+def plant( dst ):
+    p = 'SELECT * FROM farm WHERE action = \'plant\''
+    for i in dst:
+        p += ' AND dst = %s' % hex( i )
+    y.send( p + ';\n' )
+
+
+def parse_map( w = False ):
+    o = untilPrompt( y )
+    #print o.split('\n')
+    needle = o.split('\n').index( '  0 1 2 3 4 5 6 7 8 9 A B C D E F \r' )
+    pig_pos , sheep_pos , sunflower_pos , water_pos = 0 , 0 , 0 , 0
+    plot_pos = []
+    for n , l in enumerate( o.split('\n')[ needle + 1 : needle + 1 + 16 ] ):
+        print n , l
+        if sheep in l:
+            sheep_pos = ( n << 4 ) + l.index( sheep ) / 4
+        if pig in l:
+            pig_pos = ( n << 4 ) + l.index( pig ) / 4
+        if sunflower in l:
+            sunflower_pos = ( n << 4 ) + l.index( sunflower ) / 4
+        if water in l:
+            water_pos = ( n << 4 ) + l.index( water ) / 4
+        if plot in l:
+            plot_pos.append( ( n << 4 ) + l.index( plot ) / 4 )
+
+    return pig_pos , sheep_pos , sunflower_pos , water_pos , plot_pos
+
+
+
+print untilPrompt( y )
+
+sheep = '\xf0\x9f\x90\x91'
+pig = '\xf0\x9f\x90\xb7'
+grass = '\xf0\x9f\x8c\xbf'
+sunflower = '\xf0\x9f\x8c\xbb'
+water = '\xf0\x9f\x9a\xb0'
+plot = '\xe2\xac\x9c'
+
+
+y.send( 'select * from farm;\n' )
+
+
+pig_pos , sheep_pos , sunflower_pos , water_pos , plot_pos = parse_map()
+print plot_pos
+print 'pig -> %s\nsheep -> %s\nsunflower -> %s\nwater -> %s' % ( hex( pig_pos ) , hex( sheep_pos ) , hex( sunflower_pos ) , hex( water_pos ) )
+move( sheep_pos , pig_pos + 1 )
+
+
+pig_pos , sheep_pos , sunflower_pos , water_pos , plot_pos = parse_map()
+print 'pig -> %s\nsheep -> %s\nsunflower -> %s\nwater -> %s' % ( hex( pig_pos ) , hex( sheep_pos ) , hex( sunflower_pos ) , hex( water_pos ) )
+
+plant( plot_pos )
+print untilPrompt( y )
+
+_water( plot_pos )
+print untilPrompt( y )
+
+pickup( plot_pos[0] )
+print untilPrompt( y )
+
+quests()
+print untilPrompt( y )
+
+show()
+print untilPrompt( y )
