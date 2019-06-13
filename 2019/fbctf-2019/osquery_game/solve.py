@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import paramiko
 from pwn import *
 
 # fb{you_win_the_game_again_again}
@@ -14,7 +13,6 @@ move [src] [dst]|Requests to move animal in SRC field to DST field.
 pickup [src]|Pickup item in SRC field.
 water [...dst]|Water planted herb located at DST.
 plant [...dst]|Plant a herb in the plowed DST.
-
 
 Town Mayor|The sheep wants to be next to the pig. Please move him, but be careful, if he sees you he will run away in less than a second, you need to move fast.|no
 Town Mayor|Please water something that you have planted. You need to pickup a pail first. The sheep was playing with the water pail, if you move him next to his friend he may give it back.|no
@@ -71,8 +69,6 @@ def parse_map( w = False ):
 
     return pig_pos , sheep_pos , sunflower_pos , water_pos , plot_pos
 
-
-
 print y.recvuntil( 'y> ' )
 
 sheep = '\xf0\x9f\x90\x91'
@@ -90,7 +86,6 @@ pig_pos , sheep_pos , sunflower_pos , water_pos , plot_pos = parse_map()
 print plot_pos
 print 'pig -> %s\nsheep -> %s\nsunflower -> %s\nwater -> %s' % ( hex( pig_pos ) , hex( sheep_pos ) , hex( sunflower_pos ) , hex( water_pos ) )
 move( sheep_pos , pig_pos + 1 )
-
 
 pig_pos , sheep_pos , sunflower_pos , water_pos , plot_pos = parse_map()
 print 'pig -> %s\nsheep -> %s\nsunflower -> %s\nwater -> %s' % ( hex( pig_pos ) , hex( sheep_pos ) , hex( sunflower_pos ) , hex( water_pos ) )
