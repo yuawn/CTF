@@ -8,6 +8,7 @@
 ### Team: DoubleSigma / Balsn
 ## Map
 * [1st, TokyoWesterns CTF 5th 2019](https://github.com/yuawn/CTF/tree/master/2019/twctf)
+* [8th, Google Capture The Flag 2019 (Quals)](https://github.com/yuawn/CTF/tree/master/2019/google-ctf)
 * [2nd, Facebook CTF 2019](https://github.com/yuawn/CTF/tree/master/2019/fbctf-2019)
 * [2nd, DEFCON 27 CTF Qualifier 2019 - HITCON⚔BFKinesiS](https://github.com/yuawn/CTF/tree/master/2019/defcon27-quals-2019)
 * [4th, Plaid CTF 2019](https://balsn.tw/ctf_writeup/20190413-plaidctf/)
