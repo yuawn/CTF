@@ -30,6 +30,3 @@
 * [29th, HITCON CTF 2017 quals](https://github.com/yuawn/CTF/tree/master/2017/HITCON_2017_quals)
 * [1st, CS 2017 Fall csie.ctf.tw](https://github.com/yuawn/CTF/tree/master/sites/CS_2017_Fall)
 * [3rd, AIS3 Final 2017](https://github.com/yuawn/CTF/tree/master/2017/AIS3_final)
-![defcon](https://github.com/yuawn/CTF/blob/master/2018/DEFCON_Final/defcon.jpg)
-![HITCON](https://github.com/yuawn/CTF/blob/master/2017/HITCON_2017_Final/photo.jpg)
-![AIS3](https://github.com/yuawn/CTF/blob/master/2018/eof_final/a.jpg)
