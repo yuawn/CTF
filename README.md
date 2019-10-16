@@ -7,6 +7,7 @@
 * [pwnable.tw](https://pwnable.tw/user/370) -> yuawn🇹🇼 😇🍊🐟🔓🤖🐻☠️
 ### Team: DoubleSigma / Balsn
 ## Map
+* [2nd, HITCON CTF 2019 Quals](https://github.com/yuawn/CTF/tree/master/2019/hitcon)
 * [1st, TokyoWesterns CTF 5th 2019](https://github.com/yuawn/CTF/tree/master/2019/twctf)
 * [8th, Google Capture The Flag 2019 (Quals)](https://github.com/yuawn/CTF/tree/master/2019/google-ctf)
 * [2nd, Facebook CTF 2019](https://github.com/yuawn/CTF/tree/master/2019/fbctf-2019)
