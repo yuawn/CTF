@@ -51,7 +51,7 @@ def add( a , b , top = False ):
 
 def sub( a , b ):
     if b == -1:
-        return push( b ) + push( a ) + '➖'
+        return push( a ) + '➖'
     return push( b ) + push( a ) + '➖'
 
 def mul( a , b ):
