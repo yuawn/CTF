@@ -19,6 +19,7 @@ def wri( data ):
     y.sendafter( ':' , data )
 
 
+
 y.recvuntil( '0x' )
 l.address = int( y.recvline().strip() , 16 ) - l.sym.printf
 success( 'libc -> %s' % hex( l.address ) )
