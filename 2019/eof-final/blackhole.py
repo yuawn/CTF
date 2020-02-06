@@ -12,7 +12,7 @@ def fmt( p , r = True ):
     else:
         y.send( p + '\0' )
         sleep( 0.16 )
-
+        
 
 while True:
     y = remote( 'eof.ais3.org' , 1337 )
@@ -72,7 +72,3 @@ while True:
         y.close()
     except Exception:
         y.close()
-
-
-y.interactive()
-
