@@ -6,9 +6,9 @@
 * [pwnable.tw](https://pwnable.tw/user/370) -> yuawn🇹🇼 😇🍊🐟🔓🤖🐻☠️
 ### Team: DoubleSigma / Balsn
 ## Map
-* [7th, HITCON CTF 2019 Finals](https://github.com/yuawn/CTF/tree/master/2019/hitcon-final)
 * [7th, Google Capture The Flag 2019 (Finals)](https://github.com/yuawn/CTF/tree/master/2019/google-ctf-finals)
 * [7th, SECCON 2019 Online CTF](https://github.com/yuawn/CTF/tree/master/2019/seccon)
+* [7th, HITCON CTF 2019 Finals](https://github.com/yuawn/CTF/tree/master/2019/hitcon-final)
 * [2nd, HITCON CTF 2019 Quals](https://github.com/yuawn/CTF/tree/master/2019/hitcon)
 * [3rd, Teaser Dragon CTF 2019](https://balsn.tw/ctf_writeup/20190921-dragonctfteaser/)
 * [4th, Real World CTF 2019 Finals](https://github.com/yuawn/CTF/tree/master/2019/realworld_finals)
@@ -22,6 +22,7 @@
 * [12nd, 0CTF 2019 Quals](https://github.com/yuawn/CTF/tree/master/2019/0ctf)
 * [2nd, CONFidence CTF 2019 Teaser](https://github.com/yuawn/CTF/tree/master/2019/confidence_teaser)
 * [1st, Pragyan CTF 2019](https://github.com/yuawn/CTF/tree/master/2019/pragyan)
+* [6th, Codegate CTF 2019 Final - Balsn](https://github.com/yuawn/CTF/tree/master/2019/codegate-final)
 * [6th, Codegate CTF 2019 Preliminary - Balsn](https://github.com/yuawn/CTF/tree/master/2019/codegate)
 * [1st, AIS3 EOF Final 2019](https://github.com/yuawn/CTF/tree/master/2019/EOF_Final)
 * [5th, D-CTF Final 2018 - DoubleSigma](https://github.com/yuawn/CTF/tree/master/2018/defcamp-ctf-final)
