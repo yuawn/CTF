@@ -6,6 +6,7 @@
 * [pwnable.tw](https://pwnable.tw/user/370) -> yuawn🇹🇼 😇🍊🐟🔓🤖🐻☠️
 ### Team: DoubleSigma / Balsn
 ## Map
+* [3rd, HITCON CTF 2020](https://github.com/yuawn/CTF/tree/master/2020/hitcon)
 * [6th, Google Capture The Flag 2020 (Quals)](https://github.com/yuawn/CTF/tree/master/2020/gctf)
 * [2nd, Codegate CTF 2020 Preliminary](https://balsn.tw/ctf_writeup/20200208-codegatectf2020quals/)
 * [7th, Google Capture The Flag 2019 (Finals)](https://github.com/yuawn/CTF/tree/master/2019/google-ctf-finals)
