@@ -200,7 +200,7 @@ int main(int argc,char** argv){
         .nb_lock = {0},
         .num_edges = 1,
         .link_header.fd = 0x1111,
-        .link_header.fd = 0x2222,
+        .link_header.bk = 0x2222,
         .index = 0x6666,
         .tra = 0,
     };
