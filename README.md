@@ -7,6 +7,7 @@
 ### Team: DoubleSigma / Balsn
 ## Map
 * [3rd, HITCON CTF 2020](https://github.com/yuawn/CTF/tree/master/2020/hitcon)
+- [2nd, 0CTF/TCTF 2020 Finals](2020/0CTF-TCTF-2020-Finals)
 * [1st, CONFidence CTF 2020 Finals](2020/confidence-finals)
 * [6th, Google Capture The Flag 2020 (Quals)](https://github.com/yuawn/CTF/tree/master/2020/gctf)
 * [3rd, Codegate CTF 2020 Finals](2020/codegate-finals)
