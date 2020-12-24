@@ -2,5 +2,5 @@
 ## Balsn - Champion 1st
 ![pic](pic.png)
 ![scoreboard](scoreboard.png)
-![ranking](ranking2.png)
+![ranking](ranking_live.png)
 ![ranking](ranking.png)
