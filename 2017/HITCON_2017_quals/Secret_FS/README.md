@@ -4,7 +4,7 @@
 
 * Bypass the check, then overflow the `e` in global.
 * `.txt` -> `t` -> e = 0x74 = 116
-![](https://github.com/ssspeedgit00/CTF/blob/master/2017/HITCON_2017_quals/Secret_FS/pic.png)
+![](pic.png)
 
 ```python
 #!/usr/bin/env python
