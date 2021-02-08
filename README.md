@@ -8,6 +8,7 @@
 ### Team: DoubleSigma / Balsn
 ## Map
 
+- [1st, AIS3 EOF Final 2020](2021/eof_final)
 - [4th, Real World CTF 3rd 2021](2021/realworld)
 - [3rd, HITCON CTF 2020](2020/hitcon)
 - [Champion 1st 冠軍, WCTF 2020 世界黑客大師賽](2020/WCTF)
